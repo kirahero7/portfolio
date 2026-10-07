@@ -12,8 +12,6 @@ import { Footer } from './components/Footer';
 import { Plus, Settings } from 'lucide-react';
 import { AnimatePresence } from 'motion/react';
 
-const CURRENT_RELEASE_VERSION = '2026-10-08-v3';
-const VERSION_KEY = 'ih_portfolio_version';
 const STORAGE_KEY = 'ih_portfolio_custom_data_v3';
 const AUTH_STORAGE_KEY = 'ih_portfolio_admin_auth_v1';
 
@@ -21,34 +19,37 @@ export default function App() {
   // Load data from localStorage or initial defaults
   const [data, setData] = useState<PortfolioData>(() => {
     try {
-      // 1. Force reset if URL query parameter requested
+      // 1. Force reset ONLY if explicitly requested via URL query (?reset=true or ?clean=true)
       if (typeof window !== 'undefined' && window.location.search) {
         const params = new URLSearchParams(window.location.search);
         if (params.has('reset') || params.has('clean') || params.has('fresh')) {
           localStorage.removeItem('ih_portfolio_custom_data_v1');
           localStorage.removeItem('ih_portfolio_custom_data_v2');
           localStorage.removeItem(STORAGE_KEY);
-          localStorage.setItem(VERSION_KEY, CURRENT_RELEASE_VERSION);
           return initialPortfolioData;
         }
       }
 
-      // 2. Check version to ensure source code updates immediately take effect
-      const storedVersion = localStorage.getItem(VERSION_KEY);
-      if (storedVersion !== CURRENT_RELEASE_VERSION) {
-        localStorage.removeItem('ih_portfolio_custom_data_v1');
-        localStorage.removeItem('ih_portfolio_custom_data_v2');
-        localStorage.removeItem(STORAGE_KEY);
-        localStorage.setItem(VERSION_KEY, CURRENT_RELEASE_VERSION);
-        return initialPortfolioData;
-      }
-
-      // 3. If version matches, check active custom data
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        if (parsed.config && Array.isArray(parsed.projects)) {
-          return parsed;
+      // 2. Safely check storage without deleting user data (check v3, v2, v1, backup)
+      const storageKeys = [
+        STORAGE_KEY,
+        'ih_portfolio_custom_data_v2',
+        'ih_portfolio_custom_data_v1',
+        'ih_portfolio_backup',
+      ];
+      for (const key of storageKeys) {
+        const saved = localStorage.getItem(key);
+        if (saved) {
+          try {
+            const parsed = JSON.parse(saved);
+            if (parsed && parsed.config && Array.isArray(parsed.projects)) {
+              // Mirror to latest storage key to preserve
+              localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
+              return parsed;
+            }
+          } catch (err) {
+            console.warn(`Could not parse data from ${key}:`, err);
+          }
         }
       }
     } catch (e) {
@@ -137,8 +138,8 @@ export default function App() {
   const handleSaveData = (newData: PortfolioData) => {
     setData(newData);
     try {
-      localStorage.setItem(VERSION_KEY, CURRENT_RELEASE_VERSION);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(newData));
+      localStorage.setItem('ih_portfolio_backup', JSON.stringify(newData));
     } catch (e) {
       console.warn('Storage quota or error:', e);
     }
@@ -149,7 +150,7 @@ export default function App() {
     localStorage.removeItem('ih_portfolio_custom_data_v1');
     localStorage.removeItem('ih_portfolio_custom_data_v2');
     localStorage.removeItem(STORAGE_KEY);
-    localStorage.setItem(VERSION_KEY, CURRENT_RELEASE_VERSION);
+    localStorage.removeItem('ih_portfolio_backup');
     setData(initialPortfolioData);
   };
 
