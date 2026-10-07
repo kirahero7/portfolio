@@ -66,30 +66,32 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
       enName: 'Interactive Media & Motion Design Highlight',
     },
     motion: {
-      name: '動態影像',
+      name: '動態影像/錄像',
       enName: 'MOTION GRAPHICS & VIDEO',
     },
     device: {
-      name: '裝置介面',
-      enName: 'DEVICE INTERFACES & HAPTICS',
+      name: '互動裝置/介面',
+      enName: 'INTERACTIVE INSTALLATIONS & INTERFACES',
     },
     wall: {
-      name: '互動牆類',
-      enName: 'INTERACTIVE WALLS & PROJECTION',
+      name: '互動螢幕/投影',
+      enName: 'INTERACTIVE SCREENS & PROJECTIONS',
     },
   };
 
   // Site Config state
   const initialHomeVideos = (data.config.homeVideos && data.config.homeVideos.length > 0)
     ? data.config.homeVideos
-    : [
-        {
-          id: 'video-1',
-          title: data.config.showreelTitle || '2026 SHOWREEL',
-          url: data.config.showreelUrl || 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-          description: data.config.showreelDescription || '專注於動態影像設計、互動裝置介面開發與大型沉浸式互動牆體驗。融合藝術美學與即時運算技術，創造觸動感官的數位體驗。',
-        },
-      ];
+    : (data.config.showreelUrl && data.config.showreelUrl.trim().length > 0)
+      ? [
+          {
+            id: 'video-1',
+            title: data.config.showreelTitle || '2026 SHOWREEL',
+            url: data.config.showreelUrl.trim(),
+            description: data.config.showreelDescription || '',
+          },
+        ]
+      : [];
 
   const [siteConfig, setSiteConfig] = useState<SiteConfig>({
     ...data.config,
@@ -1353,10 +1355,10 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                                   </span>
                                   <span className="text-[10px] px-1.5 py-0.2 bg-slate-800 text-slate-300 border border-slate-700 font-mono">
                                     {proj.category === 'motion'
-                                      ? siteConfig.categories?.motion?.name || '動態影像'
+                                      ? siteConfig.categories?.motion?.name || '動態影像/錄像'
                                       : proj.category === 'device'
-                                      ? siteConfig.categories?.device?.name || '裝置介面'
-                                      : siteConfig.categories?.wall?.name || '互動牆類'}
+                                      ? siteConfig.categories?.device?.name || '互動裝置/介面'
+                                      : siteConfig.categories?.wall?.name || '互動螢幕/投影'}
                                   </span>
                                   {proj.year && (
                                     <span className="text-xs font-mono text-slate-400">

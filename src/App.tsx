@@ -12,37 +12,56 @@ import { Footer } from './components/Footer';
 import { Plus, Settings } from 'lucide-react';
 import { AnimatePresence } from 'motion/react';
 
-const STORAGE_KEY = 'ih_portfolio_custom_data_v1';
+const STORAGE_KEY = 'ih_portfolio_custom_data_v2';
+const LEGACY_STORAGE_KEY = 'ih_portfolio_custom_data_v1';
 const AUTH_STORAGE_KEY = 'ih_portfolio_admin_auth_v1';
 
 export default function App() {
   // Load data from localStorage or initial defaults
   const [data, setData] = useState<PortfolioData>(() => {
     try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) {
-        const parsed = JSON.parse(saved);
+      // 1. Check v2 storage first
+      const savedV2 = localStorage.getItem(STORAGE_KEY);
+      if (savedV2) {
+        const parsed = JSON.parse(savedV2);
         if (parsed.config && Array.isArray(parsed.projects)) {
-          // Automatic migration of legacy category names to new names
-          if (parsed.config.categories) {
-            if (parsed.config.categories.motion?.name === '動態影像') {
-              parsed.config.categories.motion.name = '動態影像/錄像';
-            }
-            if (parsed.config.categories.device?.name === '裝置介面') {
-              parsed.config.categories.device.name = '互動裝置/介面';
-            }
-            if (parsed.config.categories.device?.enName === 'DEVICE INTERFACES & HAPTICS') {
-              parsed.config.categories.device.enName = 'INTERACTIVE INSTALLATIONS & INTERFACES';
-            }
-            if (parsed.config.categories.wall?.name === '互動牆類') {
-              parsed.config.categories.wall.name = '互動螢幕/投影';
-            }
-            if (parsed.config.categories.wall?.enName === 'INTERACTIVE WALLS & PROJECTION') {
-              parsed.config.categories.wall.enName = 'INTERACTIVE SCREENS & PROJECTIONS';
-            }
+          return parsed;
+        }
+      }
+
+      // 2. Check legacy v1 storage if v2 does not exist yet
+      const savedV1 = localStorage.getItem(LEGACY_STORAGE_KEY);
+      if (savedV1) {
+        const parsed = JSON.parse(savedV1);
+        if (parsed.config && Array.isArray(parsed.projects)) {
+          // If legacy cache contains the old placeholder mock wall project ('流體力學'), discard legacy to adopt official source code
+          const hasOldMockWall = parsed.projects.some(
+            (p: Project) => p.id === 'wall-001' && p.title && p.title.includes('流體力學')
+          );
+          if (hasOldMockWall) {
+            localStorage.removeItem(LEGACY_STORAGE_KEY);
+            return initialPortfolioData;
           }
 
-          // Clean legacy sample dummy video from cache
+          // Otherwise migrate legacy category names and clean Rick Astley dummy video
+          if (parsed.config.categories) {
+            parsed.config.categories.motion = {
+              ...parsed.config.categories.motion,
+              name: '動態影像/錄像',
+              enName: 'MOTION GRAPHICS & VIDEO',
+            };
+            parsed.config.categories.device = {
+              ...parsed.config.categories.device,
+              name: '互動裝置/介面',
+              enName: 'INTERACTIVE INSTALLATIONS & INTERFACES',
+            };
+            parsed.config.categories.wall = {
+              ...parsed.config.categories.wall,
+              name: '互動螢幕/投影',
+              enName: 'INTERACTIVE SCREENS & PROJECTIONS',
+            };
+          }
+
           if (parsed.config.showreelUrl === 'https://www.youtube.com/watch?v=dQw4w9WgXcQ') {
             parsed.config.showreelUrl = '';
           }
@@ -51,6 +70,9 @@ export default function App() {
               (v: { url?: string }) => v.url && v.url !== 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' && v.url.trim().length > 0
             );
           }
+
+          localStorage.removeItem(LEGACY_STORAGE_KEY);
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
           return parsed;
         }
       }
@@ -149,6 +171,7 @@ export default function App() {
   // Reset to default data
   const handleResetDefaults = () => {
     localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(LEGACY_STORAGE_KEY);
     setData(initialPortfolioData);
   };
 
