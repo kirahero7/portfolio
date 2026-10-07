@@ -1,0 +1,6 @@
+{
+  "name": "IH Portfolio - 互動影像作品集",
+  "description": "極簡深色風格的互動影像作品集，支援動態影像/錄像、互動裝置/介面、互動螢幕/投影多媒體展示、YouTube/Vimeo 內嵌及即時作品管理擴充系統。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
