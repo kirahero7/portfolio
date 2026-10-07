@@ -12,67 +12,42 @@ import { Footer } from './components/Footer';
 import { Plus, Settings } from 'lucide-react';
 import { AnimatePresence } from 'motion/react';
 
-const STORAGE_KEY = 'ih_portfolio_custom_data_v2';
-const LEGACY_STORAGE_KEY = 'ih_portfolio_custom_data_v1';
+const CURRENT_RELEASE_VERSION = '2026-10-08-v3';
+const VERSION_KEY = 'ih_portfolio_version';
+const STORAGE_KEY = 'ih_portfolio_custom_data_v3';
 const AUTH_STORAGE_KEY = 'ih_portfolio_admin_auth_v1';
 
 export default function App() {
   // Load data from localStorage or initial defaults
   const [data, setData] = useState<PortfolioData>(() => {
     try {
-      // 1. Check v2 storage first
-      const savedV2 = localStorage.getItem(STORAGE_KEY);
-      if (savedV2) {
-        const parsed = JSON.parse(savedV2);
-        if (parsed.config && Array.isArray(parsed.projects)) {
-          return parsed;
+      // 1. Force reset if URL query parameter requested
+      if (typeof window !== 'undefined' && window.location.search) {
+        const params = new URLSearchParams(window.location.search);
+        if (params.has('reset') || params.has('clean') || params.has('fresh')) {
+          localStorage.removeItem('ih_portfolio_custom_data_v1');
+          localStorage.removeItem('ih_portfolio_custom_data_v2');
+          localStorage.removeItem(STORAGE_KEY);
+          localStorage.setItem(VERSION_KEY, CURRENT_RELEASE_VERSION);
+          return initialPortfolioData;
         }
       }
 
-      // 2. Check legacy v1 storage if v2 does not exist yet
-      const savedV1 = localStorage.getItem(LEGACY_STORAGE_KEY);
-      if (savedV1) {
-        const parsed = JSON.parse(savedV1);
+      // 2. Check version to ensure source code updates immediately take effect
+      const storedVersion = localStorage.getItem(VERSION_KEY);
+      if (storedVersion !== CURRENT_RELEASE_VERSION) {
+        localStorage.removeItem('ih_portfolio_custom_data_v1');
+        localStorage.removeItem('ih_portfolio_custom_data_v2');
+        localStorage.removeItem(STORAGE_KEY);
+        localStorage.setItem(VERSION_KEY, CURRENT_RELEASE_VERSION);
+        return initialPortfolioData;
+      }
+
+      // 3. If version matches, check active custom data
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        const parsed = JSON.parse(saved);
         if (parsed.config && Array.isArray(parsed.projects)) {
-          // If legacy cache contains the old placeholder mock wall project ('流體力學'), discard legacy to adopt official source code
-          const hasOldMockWall = parsed.projects.some(
-            (p: Project) => p.id === 'wall-001' && p.title && p.title.includes('流體力學')
-          );
-          if (hasOldMockWall) {
-            localStorage.removeItem(LEGACY_STORAGE_KEY);
-            return initialPortfolioData;
-          }
-
-          // Otherwise migrate legacy category names and clean Rick Astley dummy video
-          if (parsed.config.categories) {
-            parsed.config.categories.motion = {
-              ...parsed.config.categories.motion,
-              name: '動態影像/錄像',
-              enName: 'MOTION GRAPHICS & VIDEO',
-            };
-            parsed.config.categories.device = {
-              ...parsed.config.categories.device,
-              name: '互動裝置/介面',
-              enName: 'INTERACTIVE INSTALLATIONS & INTERFACES',
-            };
-            parsed.config.categories.wall = {
-              ...parsed.config.categories.wall,
-              name: '互動螢幕/投影',
-              enName: 'INTERACTIVE SCREENS & PROJECTIONS',
-            };
-          }
-
-          if (parsed.config.showreelUrl === 'https://www.youtube.com/watch?v=dQw4w9WgXcQ') {
-            parsed.config.showreelUrl = '';
-          }
-          if (Array.isArray(parsed.config.homeVideos)) {
-            parsed.config.homeVideos = parsed.config.homeVideos.filter(
-              (v: { url?: string }) => v.url && v.url !== 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' && v.url.trim().length > 0
-            );
-          }
-
-          localStorage.removeItem(LEGACY_STORAGE_KEY);
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
           return parsed;
         }
       }
@@ -162,6 +137,7 @@ export default function App() {
   const handleSaveData = (newData: PortfolioData) => {
     setData(newData);
     try {
+      localStorage.setItem(VERSION_KEY, CURRENT_RELEASE_VERSION);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(newData));
     } catch (e) {
       console.warn('Storage quota or error:', e);
@@ -170,8 +146,10 @@ export default function App() {
 
   // Reset to default data
   const handleResetDefaults = () => {
+    localStorage.removeItem('ih_portfolio_custom_data_v1');
+    localStorage.removeItem('ih_portfolio_custom_data_v2');
     localStorage.removeItem(STORAGE_KEY);
-    localStorage.removeItem(LEGACY_STORAGE_KEY);
+    localStorage.setItem(VERSION_KEY, CURRENT_RELEASE_VERSION);
     setData(initialPortfolioData);
   };
 

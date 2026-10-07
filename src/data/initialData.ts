@@ -33,7 +33,7 @@ export const initialPortfolioData: PortfolioData = {
     showreelSubtitle: 'Interactive Media & Motion Design Highlight',
     personalBio: '專注於新媒體藝術、動態視覺與互動科技體驗設計。致力於探索感官介面與數位空間的交匯，為展覽、品牌與公共場域打造獨特的互動體驗。',
     showreelUrl: '',
-    showreelDescription: '專注於動態影像設計、互動裝置介面開發與大型沉浸式互動牆體驗。融合藝術美學與即時運算技術，創造觸動感官的數位體驗。',
+    showreelDescription: '專注於動態影像/錄像設計、互動裝置/介面開發與大型沉浸式互動螢幕/投影體驗。融合藝術美學與即時運算技術，創造觸動感官的數位體驗。',
     homeVideos: [],
     footerTitle: 'IH Portfolio',
     footerBio: 'IH STUDIO © 2026 Interactive & Motion Media Portfolio. All rights reserved.',

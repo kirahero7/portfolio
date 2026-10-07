@@ -2133,15 +2133,15 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
 
               <div className="bg-[#182330] p-5 border border-slate-700 space-y-3">
                 <h3 className="text-sm font-bold text-red-400">
-                  重設回預設作品集資料
+                  同步最新原始碼資料 / 重設本機快取
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  清空本地快取變更並還原為初始範例展示專案。
+                  清空瀏覽器本機快取，並立即重新同步載入原始碼（initialData.ts）中的最新專案與配置。
                 </p>
 
                 <button
                   onClick={() => {
-                    if (window.confirm('確定要還原為預設範例資料嗎？此操作將覆蓋現有變更。')) {
+                    if (window.confirm('確定要清空本機暫存並重新載入最新原始碼資料嗎？此操作將覆蓋未導出的本機編輯。')) {
                       onResetDefaults();
                       onClose();
                     }
@@ -2149,7 +2149,7 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                   className="px-4 py-2 bg-red-950/60 hover:bg-red-900 border border-red-800 text-xs font-medium text-red-200 flex items-center gap-2"
                 >
                   <RotateCcw className="w-4 h-4" />
-                  <span>還原為初始預設數據</span>
+                  <span>清除本機暫存並同步最新原始碼</span>
                 </button>
               </div>
             </div>

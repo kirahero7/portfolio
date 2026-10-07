@@ -29,7 +29,7 @@ export interface Project {
 }
 
 export interface CategoryItemConfig {
-  name: string;      // 項目名稱/導覽名稱 (例如: 'HOME', '動態影像', '裝置介面', '互動牆類')
+  name: string;      // 項目名稱/導覽名稱 (例如: 'HOME', '動態影像/錄像', '互動裝置/介面', '互動螢幕/投影')
   title?: string;    // 進入後的主標題 (如 HOME 頁主標題 '2026 SHOWREEL'，未填則預設為 name)
   enName: string;    // 英文名稱/副標題 (例如: 'Interactive Media & Motion Design Highlight', 'MOTION GRAPHICS & VIDEO' 等)
   description?: string;
