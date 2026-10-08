@@ -2,7 +2,7 @@ import { PortfolioData } from '../types';
 
 export const initialPortfolioData: PortfolioData = {
   "config": {
-    "logoTitle": "IH",
+    "logoTitle": "I-HSIANG CHENG",
     "logoSubtitle": "Portfolio",
     "phone": "",
     "email": "kirahero7@gmail.com",
@@ -36,84 +36,302 @@ export const initialPortfolioData: PortfolioData = {
     "showreelUrl": "",
     "showreelDescription": "專注於動態影像設計、互動裝置介面開發與大型沉浸式互動牆體驗。融合藝術美學與即時運算技術，創造觸動感官的數位體驗。",
     "homeVideos": [],
-    "footerTitle": "IH Portfolio",
-    "footerBio": "IH STUDIO © 2026 Interactive & Motion Media Portfolio. All rights reserved.",
-    "adminPassword": "admin",
+    "footerTitle": "I-HSIANG CHENG Portfolio",
+    "footerBio": "I-HSIANG CHENG  © 2026",
+    "adminPassword": "12347788",
     "vimeoUrl": "",
-    "socialLinks": [
-      {
-        "platform": "Vimeo",
-        "url": "https://vimeo.com"
-      }
-    ]
+    "socialLinks": []
   },
   "projects": [
     {
-      "id": "proj-1791390811028",
+      "id": "proj-1791361385741",
       "category": "motion",
-      "code": "科工館 交通夢想館 ",
-      "title": "APP使用指南",
+      "code": "宜蘭傳藝中心 世紀初戀・楊麗花",
+      "title": "楊麗花 巨星之路 年代紀錄",
       "subtitle": "",
-      "year": "2017",
+      "year": "2026",
       "client": "",
       "role": "影像製作",
       "tools": [
         "After Effects",
-        "Illustrator"
+        "pika art"
       ],
       "description": "",
       "coverMedia": {
-        "id": "cov-1791390811028",
+        "id": "cov-1791361385741",
         "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/18.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E4%BA%A4%E9%80%9A%E5%A4%A2%E6%83%B3%E9%A4%A8%20APP%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/FIT1.jpg",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/01.%E6%A5%8A%E9%BA%97%E8%8A%B1%20%E5%B7%A8%E6%98%9F%E4%B9%8B%E8%B7%AF/0001.jpg",
         "caption": ""
       },
       "mediaList": [
         {
-          "id": "m-1791390979137",
+          "id": "m-1791370811964",
+          "type": "youtube",
+          "url": "https://youtube.com/shorts/sk0568e2MwI?feature=share",
+          "caption": ""
+        },
+        {
+          "id": "m-1791370812493",
           "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/18.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E4%BA%A4%E9%80%9A%E5%A4%A2%E6%83%B3%E9%A4%A8%20APP%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/poiu.jpg",
-          "caption": ""
-        },
-        {
-          "id": "m-1791390876931",
-          "type": "youtube",
-          "url": "https://youtube.com/shorts/pJJFE-wLU0I?feature=share",
-          "caption": ""
-        },
-        {
-          "id": "m-1791390877366",
-          "type": "youtube",
-          "url": "https://youtube.com/shorts/olwfwWYf_X8?feature=share",
-          "caption": ""
-        },
-        {
-          "id": "m-1791390877766",
-          "type": "youtube",
-          "url": "https://youtube.com/shorts/_JOn0m7kH-I?feature=share",
-          "caption": ""
-        },
-        {
-          "id": "m-1791390878261",
-          "type": "youtube",
-          "url": "https://youtube.com/shorts/uuufX5uKnOo?feature=share",
-          "caption": ""
-        },
-        {
-          "id": "m-1791390878578",
-          "type": "youtube",
-          "url": "https://youtube.com/shorts/G7VCWCwO2sI?feature=share",
-          "caption": ""
-        },
-        {
-          "id": "m-1791390878846",
-          "type": "youtube",
-          "url": "https://youtube.com/shorts/6VCiBSFactE?feature=share",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/01.%E6%A5%8A%E9%BA%97%E8%8A%B1%20%E5%B7%A8%E6%98%9F%E4%B9%8B%E8%B7%AF/%E6%A5%8A%E9%BA%97%E8%8A%B1%20%E5%B7%A8%E6%98%9F%E4%B9%8B%E8%B7%AF.mp4_thumbs.jpg",
           "caption": ""
         }
       ],
       "featured": false,
       "order": 1
+    },
+    {
+      "id": "proj-1791361591856",
+      "category": "motion",
+      "code": "臺中國家歌劇院",
+      "title": "十周年紀念動態影片",
+      "subtitle": "",
+      "year": "2025",
+      "client": "",
+      "role": "影像製作／剪輯",
+      "tools": [
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791361591856",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/02.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%E5%8D%81%E5%91%A8%E5%B9%B4%E7%B4%80%E5%BF%B5%E5%8B%95%E7%95%AB%E5%BD%B1%E7%89%87/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%E5%8D%81%E5%91%A8%E5%B9%B4%E7%B4%80%E5%BF%B5%E5%8B%95%E7%95%AB%E5%BD%B1%E7%89%87.mov_20261007_190702.403.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791371366618",
+          "type": "youtube",
+          "url": "https://youtu.be/EZd_RaH7hmM",
+          "caption": ""
+        },
+        {
+          "id": "m-1791371366922",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/02.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%E5%8D%81%E5%91%A8%E5%B9%B4%E7%B4%80%E5%BF%B5%E5%8B%95%E7%95%AB%E5%BD%B1%E7%89%87/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%E5%8D%81%E5%91%A8%E5%B9%B4%E7%B4%80%E5%BF%B5%E5%8B%95%E7%95%AB%E5%BD%B1%E7%89%87.mov_thumbs.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 2
+    },
+    {
+      "id": "proj-1791361589455",
+      "category": "motion",
+      "code": "臺中國家歌劇院",
+      "title": "青年席快速通關宣導",
+      "subtitle": "",
+      "year": "2024",
+      "client": "",
+      "role": "動畫製作",
+      "tools": [
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791361589455",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/03.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20%E9%9D%92%E5%B9%B4%E5%B8%AD%E5%BF%AB%E9%80%9F%E9%80%9A%E9%97%9C%E5%AE%A3%E5%B0%8E/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20%E9%9D%92%E5%B9%B4%E5%B8%AD%E5%BF%AB%E9%80%9F%E9%80%9A%E9%97%9C%E5%AE%A3%E5%B0%8E.mp4_20261007_191812.559.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791371992747",
+          "type": "youtube",
+          "url": "https://youtu.be/yZzF_dXd8-k",
+          "caption": ""
+        },
+        {
+          "id": "m-1791371993111",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/03.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20%E9%9D%92%E5%B9%B4%E5%B8%AD%E5%BF%AB%E9%80%9F%E9%80%9A%E9%97%9C%E5%AE%A3%E5%B0%8E/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20%E9%9D%92%E5%B9%B4%E5%B8%AD%E5%BF%AB%E9%80%9F%E9%80%9A%E9%97%9C%E5%AE%A3%E5%B0%8E.mp4_thumbs.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 3
+    },
+    {
+      "id": "proj-1791440078366",
+      "category": "motion",
+      "code": "新古典室內樂團《極境尋光-走進江賢二》",
+      "title": "劇場影像製作",
+      "subtitle": "",
+      "year": "2024",
+      "client": "",
+      "role": "影像製作",
+      "tools": [
+        "After Effects",
+        "Photoshop"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791440078366",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/20.%E6%A5%B5%E5%A2%83%E5%B0%8B%E5%85%89%20%E2%80%94%20%E8%B5%B0%E9%80%B2%E6%B1%9F%E8%B3%A2%E4%BA%8C/OO01.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791441178627",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/20.%E6%A5%B5%E5%A2%83%E5%B0%8B%E5%85%89%20%E2%80%94%20%E8%B5%B0%E9%80%B2%E6%B1%9F%E8%B3%A2%E4%BA%8C/OO02.png",
+          "caption": ""
+        },
+        {
+          "id": "m-1791441178989",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/20.%E6%A5%B5%E5%A2%83%E5%B0%8B%E5%85%89%20%E2%80%94%20%E8%B5%B0%E9%80%B2%E6%B1%9F%E8%B3%A2%E4%BA%8C/LI001.jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791441179364",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/20.%E6%A5%B5%E5%A2%83%E5%B0%8B%E5%85%89%20%E2%80%94%20%E8%B5%B0%E9%80%B2%E6%B1%9F%E8%B3%A2%E4%BA%8C/LI002.jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791441206717",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/20.%E6%A5%B5%E5%A2%83%E5%B0%8B%E5%85%89%20%E2%80%94%20%E8%B5%B0%E9%80%B2%E6%B1%9F%E8%B3%A2%E4%BA%8C/LI003.jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791441209968",
+          "type": "youtube",
+          "url": "https://youtu.be/VNyDMTxQBg8?si=7kVJjH_E5QUJT9co",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 4
+    },
+    {
+      "id": "proj-1791361588148",
+      "category": "motion",
+      "code": "科工館 電信＠臺灣 5G行動導覽",
+      "title": "闔關APP破關動畫",
+      "subtitle": "",
+      "year": "2023",
+      "client": "",
+      "role": "動畫製作",
+      "tools": [
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791361588148",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/04.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E9%9B%BB%E4%BF%A1%EF%BC%A0%E8%87%BA%E7%81%A3%205G%E8%A1%8C%E5%8B%95%E5%B0%8E%E8%A6%BD%20%E9%97%94%E9%97%9CAPP%E7%A0%B4%E9%97%9C%E5%8B%95%E7%95%AB%20/%E9%9B%BB%E4%BF%A1%EF%BC%A0%E8%87%BA%E7%81%A3%205G%E8%A1%8C%E5%8B%95%E5%B0%8E%E8%A6%BD%20%E9%97%94%E9%97%9CAPP%E7%A0%B4%E9%97%9C%E5%8B%95%E7%95%AB.mp4_20261007_192629.444.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791374068753",
+          "type": "youtube",
+          "url": "https://youtube.com/shorts/Li-hqnatS3k?feature=share",
+          "caption": ""
+        },
+        {
+          "id": "m-1791374069397",
+          "type": "youtube",
+          "url": "https://youtube.com/shorts/z0WHc4LyAr0?feature=share",
+          "caption": ""
+        },
+        {
+          "id": "m-1791374070028",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/04.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E9%9B%BB%E4%BF%A1%EF%BC%A0%E8%87%BA%E7%81%A3%205G%E8%A1%8C%E5%8B%95%E5%B0%8E%E8%A6%BD%20%E9%97%94%E9%97%9CAPP%E7%A0%B4%E9%97%9C%E5%8B%95%E7%95%AB%20/%E9%9B%BB%E4%BF%A1%EF%BC%A0%E8%87%BA%E7%81%A3%205G%E8%A1%8C%E5%8B%95%E5%B0%8E%E8%A6%BD%20%E9%97%94%E9%97%9CAPP%E7%A0%B4%E9%97%9C%E8%87%B4%E8%AC%9D.mp4_20261007_192557.373.jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791374128431",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/04.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E9%9B%BB%E4%BF%A1%EF%BC%A0%E8%87%BA%E7%81%A3%205G%E8%A1%8C%E5%8B%95%E5%B0%8E%E8%A6%BD%20%E9%97%94%E9%97%9CAPP%E7%A0%B4%E9%97%9C%E5%8B%95%E7%95%AB%20/%E9%9B%BB%E4%BF%A1%EF%BC%A0%E8%87%BA%E7%81%A3%205G%E8%A1%8C%E5%8B%95%E5%B0%8E%E8%A6%BD%20%E9%97%94%E9%97%9CAPP%E7%A0%B4%E9%97%9C%E5%8B%95%E7%95%AB.mp4_thumbs.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 5
+    },
+    {
+      "id": "proj-1791361587166",
+      "category": "motion",
+      "code": "臺中國家歌劇院",
+      "title": "ARTS NOVA 2023 主視覺PV",
+      "subtitle": "",
+      "year": "2023",
+      "client": "",
+      "role": "影像製作",
+      "tools": [
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791361587166",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/05.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20ARTS%20NOVA%202023%20%E4%B8%BB%E8%A6%96%E8%A6%BAPV/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20ARTS%20NOVA%202023.mov_20261007_195755.145.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791374736418",
+          "type": "youtube",
+          "url": "https://youtu.be/-crEivvSOE4",
+          "caption": ""
+        },
+        {
+          "id": "m-1791374736797",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/05.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20ARTS%20NOVA%202023%20%E4%B8%BB%E8%A6%96%E8%A6%BAPV/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20ARTS%20NOVA%202023.mov_thumbs.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 6
+    },
+    {
+      "id": "proj-1791361586129",
+      "category": "motion",
+      "code": "臺中國家歌劇院",
+      "title": "韓國音樂劇《三劍客》宣傳PV",
+      "subtitle": "",
+      "year": "2023",
+      "client": "",
+      "role": "動畫製作",
+      "tools": [
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791361586129",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/06.%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV/210021.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791374981646",
+          "type": "youtube",
+          "url": "https://youtu.be/4LUKs-61_rs",
+          "caption": ""
+        },
+        {
+          "id": "m-1791446627971",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/06.%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV/%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV%20F.mov_thumbs.jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791374983000",
+          "type": "youtube",
+          "url": "https://youtu.be/e6ZncIuImaY?si=Z7A8zqKTdB89Xmzw",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 7
     },
     {
       "id": "proj-1791391989416",
@@ -173,371 +391,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 2
-    },
-    {
-      "id": "proj-1791389629215",
-      "category": "motion",
-      "code": "科工館 啟動創新實驗場",
-      "title": "細胞培養流程技術影片／骨釘介紹",
-      "subtitle": "",
-      "year": "2017",
-      "client": "",
-      "role": "攝影／剪輯",
-      "tools": [
-        "After Effects",
-        "Premiere"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791389629215",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/19.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%95%9F%E5%8B%95%E5%89%B5%E6%96%B0%E5%AF%A6%E9%A9%97%E5%A0%B4%20%E6%8A%80%E8%A1%93%E5%BD%B1%E7%89%87/%E7%B4%B0%E8%83%9E%E5%9F%B9%E9%A4%8A%E6%B5%81%E7%A8%8B.mp4_20261008_001949.961.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791390097649",
-          "type": "youtube",
-          "url": "https://youtu.be/r0fTE1iADWE",
-          "caption": ""
-        },
-        {
-          "id": "m-1791390097858",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/19.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%95%9F%E5%8B%95%E5%89%B5%E6%96%B0%E5%AF%A6%E9%A9%97%E5%A0%B4%20%E6%8A%80%E8%A1%93%E5%BD%B1%E7%89%87/ss.gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791390098084",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/19.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%95%9F%E5%8B%95%E5%89%B5%E6%96%B0%E5%AF%A6%E9%A9%97%E5%A0%B4%20%E6%8A%80%E8%A1%93%E5%BD%B1%E7%89%87/%E7%B4%B0%E8%83%9E%E5%9F%B9%E9%A4%8A%E6%B5%81%E7%A8%8B.mp4_thumbs.jpg",
-          "caption": ""
-        },
-        {
-          "id": "m-1791390131186",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/19.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%95%9F%E5%8B%95%E5%89%B5%E6%96%B0%E5%AF%A6%E9%A9%97%E5%A0%B4%20%E6%8A%80%E8%A1%93%E5%BD%B1%E7%89%87/bb.gif",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 3
-    },
-    {
-      "id": "proj-1791386013375",
-      "category": "motion",
-      "code": "科博館 半導體的世界",
-      "title": "半導體實驗",
-      "subtitle": "",
-      "year": "2020",
-      "client": "",
-      "role": "後製剪輯",
-      "tools": [
-        "After Effects",
-        "Premiere"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791386013375",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/13.%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%AF%A6%E9%A9%97/%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%AF%A6%E9%A9%97OP.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791386015744",
-          "type": "youtube",
-          "url": "https://youtube.com/shorts/b1DBfhuw8Uw?feature=share",
-          "caption": ""
-        },
-        {
-          "id": "m-1791386026421",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/13.%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%AF%A6%E9%A9%97/LAB01.jpg",
-          "caption": ""
-        },
-        {
-          "id": "m-1791386026935",
-          "type": "youtube",
-          "url": "https://youtube.com/shorts/DrGPS9etpxI?feature=share",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 4
-    },
-    {
-      "id": "proj-1791361385741",
-      "category": "motion",
-      "code": "宜蘭傳藝中心 世紀初戀・楊麗花",
-      "title": "楊麗花 巨星之路 年代紀錄",
-      "subtitle": "",
-      "year": "2026",
-      "client": "",
-      "role": "影像製作",
-      "tools": [
-        "After Effects",
-        "pika art"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791361385741",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/01.%E6%A5%8A%E9%BA%97%E8%8A%B1%20%E5%B7%A8%E6%98%9F%E4%B9%8B%E8%B7%AF/0001.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791370811964",
-          "type": "youtube",
-          "url": "https://youtube.com/shorts/sk0568e2MwI?feature=share",
-          "caption": ""
-        },
-        {
-          "id": "m-1791370812493",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/01.%E6%A5%8A%E9%BA%97%E8%8A%B1%20%E5%B7%A8%E6%98%9F%E4%B9%8B%E8%B7%AF/%E6%A5%8A%E9%BA%97%E8%8A%B1%20%E5%B7%A8%E6%98%9F%E4%B9%8B%E8%B7%AF.mp4_thumbs.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 5
-    },
-    {
-      "id": "proj-1791385018637",
-      "category": "motion",
-      "code": "科博館 半導體的世界",
-      "title": " 電漿介紹",
-      "subtitle": "",
-      "year": "2020",
-      "client": "",
-      "role": "後製剪輯",
-      "tools": [
-        "After Effects",
-        "Premiere"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791385018637",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/12.%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF/%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF%E4%BB%8B%E7%B4%B9.mp4_20261007_225154.436.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791385115043",
-          "type": "youtube",
-          "url": "https://youtu.be/zlqlhDh6VjA",
-          "caption": ""
-        },
-        {
-          "id": "m-1791385118265",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/12.%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF/%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF%E4%BB%8B%E7%B4%B9.mp4_thumbs.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 6
-    },
-    {
-      "id": "proj-1791361591856",
-      "category": "motion",
-      "code": "臺中國家歌劇院",
-      "title": "十周年紀念動態影片",
-      "subtitle": "",
-      "year": "2025",
-      "client": "",
-      "role": "影像製作／剪輯",
-      "tools": [
-        "After Effects"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791361591856",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/02.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%E5%8D%81%E5%91%A8%E5%B9%B4%E7%B4%80%E5%BF%B5%E5%8B%95%E7%95%AB%E5%BD%B1%E7%89%87/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%E5%8D%81%E5%91%A8%E5%B9%B4%E7%B4%80%E5%BF%B5%E5%8B%95%E7%95%AB%E5%BD%B1%E7%89%87.mov_20261007_190702.403.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791371366618",
-          "type": "youtube",
-          "url": "https://youtu.be/EZd_RaH7hmM",
-          "caption": ""
-        },
-        {
-          "id": "m-1791371366922",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/02.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%E5%8D%81%E5%91%A8%E5%B9%B4%E7%B4%80%E5%BF%B5%E5%8B%95%E7%95%AB%E5%BD%B1%E7%89%87/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%E5%8D%81%E5%91%A8%E5%B9%B4%E7%B4%80%E5%BF%B5%E5%8B%95%E7%95%AB%E5%BD%B1%E7%89%87.mov_thumbs.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 7
-    },
-    {
-      "id": "proj-1791361589455",
-      "category": "motion",
-      "code": "臺中國家歌劇院",
-      "title": "青年席快速通關宣導",
-      "subtitle": "",
-      "year": "2025",
-      "client": "",
-      "role": "動畫製作",
-      "tools": [
-        "After Effects"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791361589455",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/03.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20%E9%9D%92%E5%B9%B4%E5%B8%AD%E5%BF%AB%E9%80%9F%E9%80%9A%E9%97%9C%E5%AE%A3%E5%B0%8E/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20%E9%9D%92%E5%B9%B4%E5%B8%AD%E5%BF%AB%E9%80%9F%E9%80%9A%E9%97%9C%E5%AE%A3%E5%B0%8E.mp4_20261007_191812.559.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791371992747",
-          "type": "youtube",
-          "url": "https://youtu.be/yZzF_dXd8-k",
-          "caption": ""
-        },
-        {
-          "id": "m-1791371993111",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/03.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20%E9%9D%92%E5%B9%B4%E5%B8%AD%E5%BF%AB%E9%80%9F%E9%80%9A%E9%97%9C%E5%AE%A3%E5%B0%8E/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20%E9%9D%92%E5%B9%B4%E5%B8%AD%E5%BF%AB%E9%80%9F%E9%80%9A%E9%97%9C%E5%AE%A3%E5%B0%8E.mp4_thumbs.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
       "order": 8
-    },
-    {
-      "id": "proj-1791361588148",
-      "category": "motion",
-      "code": "科工館 電信＠臺灣 5G行動導覽",
-      "title": "闔關APP破關動畫",
-      "subtitle": "",
-      "year": "2023",
-      "client": "",
-      "role": "動畫製作",
-      "tools": [
-        "After Effects"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791361588148",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/04.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E9%9B%BB%E4%BF%A1%EF%BC%A0%E8%87%BA%E7%81%A3%205G%E8%A1%8C%E5%8B%95%E5%B0%8E%E8%A6%BD%20%E9%97%94%E9%97%9CAPP%E7%A0%B4%E9%97%9C%E5%8B%95%E7%95%AB%20/%E9%9B%BB%E4%BF%A1%EF%BC%A0%E8%87%BA%E7%81%A3%205G%E8%A1%8C%E5%8B%95%E5%B0%8E%E8%A6%BD%20%E9%97%94%E9%97%9CAPP%E7%A0%B4%E9%97%9C%E5%8B%95%E7%95%AB.mp4_20261007_192629.444.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791374068753",
-          "type": "youtube",
-          "url": "https://youtube.com/shorts/Li-hqnatS3k?feature=share",
-          "caption": ""
-        },
-        {
-          "id": "m-1791374069397",
-          "type": "youtube",
-          "url": "https://youtube.com/shorts/z0WHc4LyAr0?feature=share",
-          "caption": ""
-        },
-        {
-          "id": "m-1791374070028",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/04.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E9%9B%BB%E4%BF%A1%EF%BC%A0%E8%87%BA%E7%81%A3%205G%E8%A1%8C%E5%8B%95%E5%B0%8E%E8%A6%BD%20%E9%97%94%E9%97%9CAPP%E7%A0%B4%E9%97%9C%E5%8B%95%E7%95%AB%20/%E9%9B%BB%E4%BF%A1%EF%BC%A0%E8%87%BA%E7%81%A3%205G%E8%A1%8C%E5%8B%95%E5%B0%8E%E8%A6%BD%20%E9%97%94%E9%97%9CAPP%E7%A0%B4%E9%97%9C%E8%87%B4%E8%AC%9D.mp4_20261007_192557.373.jpg",
-          "caption": ""
-        },
-        {
-          "id": "m-1791374128431",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/04.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E9%9B%BB%E4%BF%A1%EF%BC%A0%E8%87%BA%E7%81%A3%205G%E8%A1%8C%E5%8B%95%E5%B0%8E%E8%A6%BD%20%E9%97%94%E9%97%9CAPP%E7%A0%B4%E9%97%9C%E5%8B%95%E7%95%AB%20/%E9%9B%BB%E4%BF%A1%EF%BC%A0%E8%87%BA%E7%81%A3%205G%E8%A1%8C%E5%8B%95%E5%B0%8E%E8%A6%BD%20%E9%97%94%E9%97%9CAPP%E7%A0%B4%E9%97%9C%E5%8B%95%E7%95%AB.mp4_thumbs.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 9
-    },
-    {
-      "id": "proj-1791361587166",
-      "category": "motion",
-      "code": "臺中國家歌劇院",
-      "title": "ARTS NOVA 2023 主視覺PV",
-      "subtitle": "",
-      "year": "2023",
-      "client": "",
-      "role": "影像製作",
-      "tools": [
-        "After Effects"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791361587166",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/05.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20ARTS%20NOVA%202023%20%E4%B8%BB%E8%A6%96%E8%A6%BAPV/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20ARTS%20NOVA%202023.mov_20261007_195755.145.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791374736418",
-          "type": "youtube",
-          "url": "https://youtu.be/-crEivvSOE4",
-          "caption": ""
-        },
-        {
-          "id": "m-1791374736797",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/05.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20ARTS%20NOVA%202023%20%E4%B8%BB%E8%A6%96%E8%A6%BAPV/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20ARTS%20NOVA%202023.mov_thumbs.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 10
-    },
-    {
-      "id": "proj-1791361586129",
-      "category": "motion",
-      "code": "臺中國家歌劇院",
-      "title": "韓國音樂劇《三劍客》宣傳PV",
-      "subtitle": "",
-      "year": "2023",
-      "client": "",
-      "role": "動畫製作",
-      "tools": [
-        "After Effects"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791361586129",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/05.%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV/%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV%20F.mov_20261007_201040.582.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791374981646",
-          "type": "youtube",
-          "url": "https://youtu.be/4LUKs-61_rs",
-          "caption": ""
-        },
-        {
-          "id": "m-1791374983000",
-          "type": "youtube",
-          "url": "https://youtu.be/e6ZncIuImaY?si=Z7A8zqKTdB89Xmzw",
-          "caption": ""
-        },
-        {
-          "id": "m-1791374983420",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/05.%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV/%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV%20F.mov_thumbs.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 11
     },
     {
       "id": "proj-1791361584870",
@@ -579,7 +433,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 12
+      "order": 9
     },
     {
       "id": "proj-1791361581735",
@@ -615,49 +469,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 13
-    },
-    {
-      "id": "proj-1791361574777",
-      "category": "motion",
-      "code": "科工館 智慧醫療專區",
-      "title": "智慧診間",
-      "subtitle": "",
-      "year": "2020",
-      "client": "",
-      "role": "影像製作",
-      "tools": [
-        "After Effects"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791361574777",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/09.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%86%AB%E7%99%82%20%E6%99%BA%E6%85%A7%E8%A8%BA%E9%96%93/%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%86%AB%E7%99%82%E5%B0%88%E5%8D%80-%E6%99%BA%E6%85%A7%E8%A8%BA%E9%96%93.mov_20261007_223006.334.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791383543601",
-          "type": "youtube",
-          "url": "https://youtu.be/DCQqGH_bb5s",
-          "caption": ""
-        },
-        {
-          "id": "m-1791383543876",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/09.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%86%AB%E7%99%82%20%E6%99%BA%E6%85%A7%E8%A8%BA%E9%96%93/%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%86%AB%E7%99%82%E5%B0%88%E5%8D%80-%E6%99%BA%E6%85%A7%E8%A8%BA%E9%96%93.mov_thumbs.jpg",
-          "caption": ""
-        },
-        {
-          "id": "m-1791383544183",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/09.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%86%AB%E7%99%82%20%E6%99%BA%E6%85%A7%E8%A8%BA%E9%96%93/DO-004.mp4_20221006_222205.836.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 14
+      "order": 10
     },
     {
       "id": "proj-1791356035250",
@@ -707,6 +519,177 @@ export const initialPortfolioData: PortfolioData = {
           "id": "m-1791384352925",
           "type": "image",
           "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/11.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%202021%20NTT-TIFA%20%E5%9C%8B%E9%9A%9B%E8%97%9D%E8%A1%93%E7%AF%80%20%E4%B8%BB%E8%A6%96%E8%A6%BA%E5%8B%95%E6%85%8B/end.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 11
+    },
+    {
+      "id": "proj-1791361574777",
+      "category": "motion",
+      "code": "科工館 智慧醫療專區",
+      "title": "智慧診間",
+      "subtitle": "",
+      "year": "2020",
+      "client": "",
+      "role": "影像製作",
+      "tools": [
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791361574777",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/09.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%86%AB%E7%99%82%20%E6%99%BA%E6%85%A7%E8%A8%BA%E9%96%93/%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%86%AB%E7%99%82%E5%B0%88%E5%8D%80-%E6%99%BA%E6%85%A7%E8%A8%BA%E9%96%93.mov_20261007_223006.334.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791383543601",
+          "type": "youtube",
+          "url": "https://youtu.be/DCQqGH_bb5s",
+          "caption": ""
+        },
+        {
+          "id": "m-1791383543876",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/09.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%86%AB%E7%99%82%20%E6%99%BA%E6%85%A7%E8%A8%BA%E9%96%93/%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%86%AB%E7%99%82%E5%B0%88%E5%8D%80-%E6%99%BA%E6%85%A7%E8%A8%BA%E9%96%93.mov_thumbs.jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791383544183",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/09.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%86%AB%E7%99%82%20%E6%99%BA%E6%85%A7%E8%A8%BA%E9%96%93/DO-004.mp4_20221006_222205.836.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 12
+    },
+    {
+      "id": "motion-004",
+      "category": "motion",
+      "code": "科博館 半導體的世界",
+      "title": " 人物訪談",
+      "subtitle": "",
+      "year": "2020",
+      "client": "",
+      "role": "攝影剪輯後製",
+      "tools": [
+        "After Effects",
+        "Premiere"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "m4-c",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/10.%E7%A7%91%E5%8D%9A%E9%A4%A8%20%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E8%A8%AA%E8%AB%87%E7%B4%80%E9%8C%84/SH-01%20Linked%20Comp%2001.mp4_20261007_165314.470.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791383102870",
+          "type": "youtube",
+          "url": "https://youtu.be/EQH_LEydk3Q",
+          "caption": ""
+        },
+        {
+          "id": "m-1791383103146",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/10.%E7%A7%91%E5%8D%9A%E9%A4%A8%20%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E8%A8%AA%E8%AB%87%E7%B4%80%E9%8C%84/SH-01%20Linked%20Comp%2001.mp4_20261007_165300.213.jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791383103385",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/10.%E7%A7%91%E5%8D%9A%E9%A4%A8%20%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E8%A8%AA%E8%AB%87%E7%B4%80%E9%8C%84/SH-01%20Linked%20Comp%2001.mp4_20261007_165306.233.jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791383103875",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/10.%E7%A7%91%E5%8D%9A%E9%A4%A8%20%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E8%A8%AA%E8%AB%87%E7%B4%80%E9%8C%84/UI.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 13
+    },
+    {
+      "id": "proj-1791385018637",
+      "category": "motion",
+      "code": "科博館 半導體的世界",
+      "title": " 電漿介紹",
+      "subtitle": "",
+      "year": "2020",
+      "client": "",
+      "role": "後製剪輯",
+      "tools": [
+        "After Effects",
+        "Premiere"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791385018637",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/12.%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF/%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF%E4%BB%8B%E7%B4%B9.mp4_20261007_225154.436.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791385115043",
+          "type": "youtube",
+          "url": "https://youtu.be/zlqlhDh6VjA",
+          "caption": ""
+        },
+        {
+          "id": "m-1791385118265",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/12.%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF/%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF%E4%BB%8B%E7%B4%B9.mp4_thumbs.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 14
+    },
+    {
+      "id": "proj-1791386013375",
+      "category": "motion",
+      "code": "科博館 半導體的世界",
+      "title": "半導體實驗",
+      "subtitle": "",
+      "year": "2020",
+      "client": "",
+      "role": "後製剪輯",
+      "tools": [
+        "After Effects",
+        "Premiere"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791386013375",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/13.%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%AF%A6%E9%A9%97/%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%AF%A6%E9%A9%97OP.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791386015744",
+          "type": "youtube",
+          "url": "https://youtube.com/shorts/b1DBfhuw8Uw?feature=share",
+          "caption": ""
+        },
+        {
+          "id": "m-1791386026421",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/13.%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%AF%A6%E9%A9%97/LAB01.jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791386026935",
+          "type": "youtube",
+          "url": "https://youtube.com/shorts/DrGPS9etpxI?feature=share",
           "caption": ""
         }
       ],
@@ -1225,53 +1208,120 @@ export const initialPortfolioData: PortfolioData = {
       "order": 23
     },
     {
-      "id": "motion-004",
+      "id": "proj-1791390811028",
       "category": "motion",
-      "code": "科博館 半導體的世界",
-      "title": " 人物訪談",
+      "code": "科工館 交通夢想館 ",
+      "title": "APP使用指南",
       "subtitle": "",
-      "year": "2020",
+      "year": "2017",
       "client": "",
-      "role": "攝影剪輯後製",
+      "role": "影像製作",
+      "tools": [
+        "After Effects",
+        "Illustrator"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791390811028",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/18.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E4%BA%A4%E9%80%9A%E5%A4%A2%E6%83%B3%E9%A4%A8%20APP%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/FIT1.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791390979137",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/18.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E4%BA%A4%E9%80%9A%E5%A4%A2%E6%83%B3%E9%A4%A8%20APP%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/poiu.jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791390876931",
+          "type": "youtube",
+          "url": "https://youtube.com/shorts/pJJFE-wLU0I?feature=share",
+          "caption": ""
+        },
+        {
+          "id": "m-1791390877366",
+          "type": "youtube",
+          "url": "https://youtube.com/shorts/olwfwWYf_X8?feature=share",
+          "caption": ""
+        },
+        {
+          "id": "m-1791390877766",
+          "type": "youtube",
+          "url": "https://youtube.com/shorts/_JOn0m7kH-I?feature=share",
+          "caption": ""
+        },
+        {
+          "id": "m-1791390878261",
+          "type": "youtube",
+          "url": "https://youtube.com/shorts/uuufX5uKnOo?feature=share",
+          "caption": ""
+        },
+        {
+          "id": "m-1791390878578",
+          "type": "youtube",
+          "url": "https://youtube.com/shorts/G7VCWCwO2sI?feature=share",
+          "caption": ""
+        },
+        {
+          "id": "m-1791390878846",
+          "type": "youtube",
+          "url": "https://youtube.com/shorts/6VCiBSFactE?feature=share",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 24
+    },
+    {
+      "id": "proj-1791389629215",
+      "category": "motion",
+      "code": "科工館 啟動創新實驗場",
+      "title": "細胞培養流程技術影片／骨釘介紹",
+      "subtitle": "",
+      "year": "2017",
+      "client": "",
+      "role": "攝影／剪輯",
       "tools": [
         "After Effects",
         "Premiere"
       ],
       "description": "",
       "coverMedia": {
-        "id": "m4-c",
+        "id": "cov-1791389629215",
         "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/10.%E7%A7%91%E5%8D%9A%E9%A4%A8%20%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E8%A8%AA%E8%AB%87%E7%B4%80%E9%8C%84/SH-01%20Linked%20Comp%2001.mp4_20261007_165314.470.jpg",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/19.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%95%9F%E5%8B%95%E5%89%B5%E6%96%B0%E5%AF%A6%E9%A9%97%E5%A0%B4%20%E6%8A%80%E8%A1%93%E5%BD%B1%E7%89%87/%E7%B4%B0%E8%83%9E%E5%9F%B9%E9%A4%8A%E6%B5%81%E7%A8%8B.mp4_20261008_001949.961.jpg",
         "caption": ""
       },
       "mediaList": [
         {
-          "id": "m-1791383102870",
+          "id": "m-1791390097649",
           "type": "youtube",
-          "url": "https://youtu.be/EQH_LEydk3Q",
+          "url": "https://youtu.be/r0fTE1iADWE",
           "caption": ""
         },
         {
-          "id": "m-1791383103146",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/10.%E7%A7%91%E5%8D%9A%E9%A4%A8%20%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E8%A8%AA%E8%AB%87%E7%B4%80%E9%8C%84/SH-01%20Linked%20Comp%2001.mp4_20261007_165300.213.jpg",
+          "id": "m-1791390097858",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/19.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%95%9F%E5%8B%95%E5%89%B5%E6%96%B0%E5%AF%A6%E9%A9%97%E5%A0%B4%20%E6%8A%80%E8%A1%93%E5%BD%B1%E7%89%87/ss.gif",
           "caption": ""
         },
         {
-          "id": "m-1791383103385",
+          "id": "m-1791390098084",
           "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/10.%E7%A7%91%E5%8D%9A%E9%A4%A8%20%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E8%A8%AA%E8%AB%87%E7%B4%80%E9%8C%84/SH-01%20Linked%20Comp%2001.mp4_20261007_165306.233.jpg",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/19.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%95%9F%E5%8B%95%E5%89%B5%E6%96%B0%E5%AF%A6%E9%A9%97%E5%A0%B4%20%E6%8A%80%E8%A1%93%E5%BD%B1%E7%89%87/%E7%B4%B0%E8%83%9E%E5%9F%B9%E9%A4%8A%E6%B5%81%E7%A8%8B.mp4_thumbs.jpg",
           "caption": ""
         },
         {
-          "id": "m-1791383103875",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/10.%E7%A7%91%E5%8D%9A%E9%A4%A8%20%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E8%A8%AA%E8%AB%87%E7%B4%80%E9%8C%84/UI.jpg",
+          "id": "m-1791390131186",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/19.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%95%9F%E5%8B%95%E5%89%B5%E6%96%B0%E5%AF%A6%E9%A9%97%E5%A0%B4%20%E6%8A%80%E8%A1%93%E5%BD%B1%E7%89%87/bb.gif",
           "caption": ""
         }
       ],
       "featured": false,
-      "order": 24
+      "order": 25
     },
     {
       "id": "device-001",
@@ -1343,7 +1393,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": true,
-      "order": 25
+      "order": 26
     },
     {
       "id": "proj-1791347057379",
@@ -1397,7 +1447,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 26
+      "order": 27
     },
     {
       "id": "device-002",
@@ -1445,14 +1495,14 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 27
+      "order": 28
     },
     {
       "id": "device-003",
       "category": "device",
       "code": "國立科學工藝博物館",
-      "title": "動力與機械 智慧智造",
-      "subtitle": "汽車安全系統 AR 體驗",
+      "title": "動力與機械-汽車安全系統 AR 體驗",
+      "subtitle": "",
       "year": "2018",
       "client": "",
       "role": "動畫製作／互動介面設計",
@@ -1487,7 +1537,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 28
+      "order": 29
     },
     {
       "id": "device-004",
@@ -1517,12 +1567,6 @@ export const initialPortfolioData: PortfolioData = {
           "caption": ""
         },
         {
-          "id": "m-1791354967380",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/SW1.gif",
-          "caption": ""
-        },
-        {
           "id": "m-1791354967587",
           "type": "image",
           "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/%E4%B8%BB%E7%95%AB%E9%9D%A2__00000.png",
@@ -1539,10 +1583,64 @@ export const initialPortfolioData: PortfolioData = {
           "type": "gif",
           "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/SW1_3.gif",
           "caption": ""
+        },
+        {
+          "id": "m-1791444858082",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/LOB1%20(1).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444858463",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/LOB1%20(2).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444858816",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/LOB1%20(3).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444859108",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/LOB1%20(4).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444859412",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/LOB1%20(5).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444985457",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRUI%20(1).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444985728",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRUI%20(2).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444986022",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRUI%20(3).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444986312",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRUI%20(4).gif",
+          "caption": ""
         }
       ],
       "featured": false,
-      "order": 29
+      "order": 30
     },
     {
       "id": "proj-1791305838784",
@@ -1608,7 +1706,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 30
+      "order": 31
     },
     {
       "id": "proj-1791305899703",
@@ -1680,7 +1778,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 31
+      "order": 32
     },
     {
       "id": "proj-1791346298681",
@@ -1710,18 +1808,6 @@ export const initialPortfolioData: PortfolioData = {
           "caption": ""
         },
         {
-          "id": "m-1791346420720",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU08.%E9%BE%8D%E8%99%8E%E5%B1%B1%E4%B8%AD%E8%8F%AF%E6%96%87%E5%8C%96%E9%A4%A8/L03.jpg",
-          "caption": ""
-        },
-        {
-          "id": "m-1791346420910",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU08.%E9%BE%8D%E8%99%8E%E5%B1%B1%E4%B8%AD%E8%8F%AF%E6%96%87%E5%8C%96%E9%A4%A8/ls_1.gif",
-          "caption": ""
-        },
-        {
           "id": "m-1791346421149",
           "type": "image",
           "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU08.%E9%BE%8D%E8%99%8E%E5%B1%B1%E4%B8%AD%E8%8F%AF%E6%96%87%E5%8C%96%E9%A4%A8/L02.jpg",
@@ -1732,10 +1818,95 @@ export const initialPortfolioData: PortfolioData = {
           "type": "gif",
           "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU08.%E9%BE%8D%E8%99%8E%E5%B1%B1%E4%B8%AD%E8%8F%AF%E6%96%87%E5%8C%96%E9%A4%A8/ls_2.gif",
           "caption": ""
+        },
+        {
+          "id": "m-1791443519813",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU08.%E9%BE%8D%E8%99%8E%E5%B1%B1%E4%B8%AD%E8%8F%AF%E6%96%87%E5%8C%96%E9%A4%A8/LS123%20(2).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791443519120",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU08.%E9%BE%8D%E8%99%8E%E5%B1%B1%E4%B8%AD%E8%8F%AF%E6%96%87%E5%8C%96%E9%A4%A8/LS123%20(1).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791443520556",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU08.%E9%BE%8D%E8%99%8E%E5%B1%B1%E4%B8%AD%E8%8F%AF%E6%96%87%E5%8C%96%E9%A4%A8/00123.png",
+          "caption": ""
+        },
+        {
+          "id": "m-1791443520135",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU08.%E9%BE%8D%E8%99%8E%E5%B1%B1%E4%B8%AD%E8%8F%AF%E6%96%87%E5%8C%96%E9%A4%A8/LS123%20(3).gif",
+          "caption": ""
         }
       ],
       "featured": false,
-      "order": 32
+      "order": 33
+    },
+    {
+      "id": "proj-1791441636219",
+      "category": "device",
+      "code": "國立科學工藝博物館",
+      "title": "啟動創新實驗場-時空航站",
+      "subtitle": "",
+      "year": "2017",
+      "client": "",
+      "role": "動畫製作",
+      "tools": [
+        "After Effects",
+        "Photoshop"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791441636219",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU11.%E6%99%82%E7%A9%BA%E8%88%AA%E7%AB%99/TI001.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791442106984",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU11.%E6%99%82%E7%A9%BA%E8%88%AA%E7%AB%99/widd%20(1).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791442107399",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU11.%E6%99%82%E7%A9%BA%E8%88%AA%E7%AB%99/widd%20(2).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791442107858",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU11.%E6%99%82%E7%A9%BA%E8%88%AA%E7%AB%99/widd%20(3).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791442108225",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU11.%E6%99%82%E7%A9%BA%E8%88%AA%E7%AB%99/widd%20(4).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791442108440",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU11.%E6%99%82%E7%A9%BA%E8%88%AA%E7%AB%99/widd%20(5).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791442108644",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU11.%E6%99%82%E7%A9%BA%E8%88%AA%E7%AB%99/widd%20(6).gif",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 34
     },
     {
       "id": "wall-001",
@@ -1772,7 +1943,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": true,
-      "order": 33
+      "order": 35
     },
     {
       "id": "wall-002",
@@ -1821,7 +1992,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 34
+      "order": 36
     },
     {
       "id": "wall-003",
@@ -1869,7 +2040,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 35
+      "order": 37
     },
     {
       "id": "wall-004",
@@ -1918,44 +2089,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 36
-    },
-    {
-      "id": "proj-1791276912512",
-      "category": "wall",
-      "code": "國立自然科學博物館_w01",
-      "title": "台積電「半導體的世界」",
-      "subtitle": "黃光區拍照互動牆",
-      "year": "2020",
-      "client": "",
-      "role": "牆面設計／動畫介面設計",
-      "tools": [
-        "After Effects",
-        "Photoshop"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791276912512",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/005/005_000000.png",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791277094845",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/005/005g.gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791277095470",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/005/0052_000001.png",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 37
+      "order": 38
     },
     {
       "id": "proj-1791279366001",
@@ -1998,7 +2132,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 38
+      "order": 39
     },
     {
       "id": "proj-1791280038533",
@@ -2047,7 +2181,44 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 39
+      "order": 40
+    },
+    {
+      "id": "proj-1791276912512",
+      "category": "wall",
+      "code": "國立自然科學博物館_w01",
+      "title": "台積電「半導體的世界」",
+      "subtitle": "黃光區拍照互動牆",
+      "year": "2020",
+      "client": "",
+      "role": "牆面設計／動畫介面設計",
+      "tools": [
+        "After Effects",
+        "Photoshop"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791276912512",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/005/005_000000.png",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791277094845",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/005/005g.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791277095470",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/005/0052_000001.png",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 41
     },
     {
       "id": "proj-1791300964476",
@@ -2055,7 +2226,7 @@ export const initialPortfolioData: PortfolioData = {
       "code": "臺灣蘭花生物科技園區_P02",
       "title": "製蝶所",
       "subtitle": "空間投影",
-      "year": "2026",
+      "year": "2019",
       "client": "",
       "role": "動畫製作",
       "tools": [
@@ -2095,15 +2266,15 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 40
+      "order": 42
     },
     {
       "id": "proj-1791281694488",
       "category": "wall",
-      "code": "台灣中油_S01",
-      "title": "石油探索館",
-      "subtitle": "互動式移動螢幕",
-      "year": "2018",
+      "code": "台灣中油石油探索館",
+      "title": "互動式移動螢幕",
+      "subtitle": "",
+      "year": "2019",
       "client": "",
       "role": "動畫製作／素材繪製／介面設計",
       "tools": [
@@ -2145,7 +2316,62 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 41
+      "order": 43
+    },
+    {
+      "id": "proj-1791446130258",
+      "category": "wall",
+      "code": "高雄市立歷史博物館",
+      "title": "見城館-映像舊城",
+      "subtitle": "",
+      "year": "2018",
+      "client": "",
+      "role": "影像製作",
+      "tools": [
+        "After Effects",
+        "Photoshop"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791446130258",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/ssssww.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791446218306",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/OODD12.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791446218767",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/lgoc%20(1).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791446219141",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/lgoc%20(2).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791446219574",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/lgoc%20(3).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791446221464",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/lgoc%20(4).gif",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 44
     },
     {
       "id": "proj-1791283125660",
@@ -2190,10 +2416,70 @@ export const initialPortfolioData: PortfolioData = {
           "type": "image",
           "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/009/MYS_0347_000000.jpg",
           "caption": ""
+        },
+        {
+          "id": "m-1791444395679",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/009/LSW1%20(1).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444396078",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/009/LSW1%20(2).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444396345",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/009/LSW1%20(3).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444396636",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/009/LSW1%20(4).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444396930",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/009/LSW1%20(5).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444397202",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/009/LSW1%20(6).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444397506",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/009/LSW1%20(7).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444397761",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/009/LSW1%20(8).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444398053",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/009/LSW1%20(9).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444398347",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/009/LSW1%20(10).gif",
+          "caption": ""
         }
       ],
       "featured": false,
-      "order": 42
+      "order": 45
     },
     {
       "id": "proj-1791284814937",
@@ -2219,6 +2505,12 @@ export const initialPortfolioData: PortfolioData = {
           "id": "m-1791284916104",
           "type": "gif",
           "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/010/010_2g.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791443913920",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/010/KA4.gif",
           "caption": ""
         },
         {
@@ -2289,7 +2581,68 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 43
+      "order": 46
+    },
+    {
+      "id": "proj-1791442459431",
+      "category": "wall",
+      "code": "江西龍虎山_P01",
+      "title": "中華文化館-戲曲浮空投影",
+      "subtitle": "",
+      "year": "2017",
+      "client": "",
+      "role": "剪輯後製",
+      "tools": [
+        "After Effects",
+        "Premiere"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791442459431",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/013/L03.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791444107748",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/013/ls_1.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444107982",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/013/te3.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444108233",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/013/te3_1.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444108462",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/013/te3_2.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444108838",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/013/lm12%20(1).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791444109059",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/013/lm12%20(2).gif",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 47
     },
     {
       "id": "proj-1791349867611",
@@ -2350,7 +2703,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 44
+      "order": 48
     }
   ]
 };
