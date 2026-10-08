@@ -277,9 +277,12 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
     });
 
     setProjectsList(nextList);
+  };
+
+  const handleSaveProjectOrder = () => {
     onSaveData({
       config: siteConfig,
-      projects: nextList,
+      projects: projectsList,
     });
   };
 
@@ -1399,6 +1402,13 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                     </div>
 
                     <div className="flex items-center gap-2">
+                      <button
+                        type="button"
+                        onClick={handleSaveProjectOrder}
+                        className="px-3.5 py-1.5 text-xs bg-emerald-700 hover:bg-emerald-600 text-white font-bold transition-colors shadow"
+                      >
+                        儲存排序
+                      </button>
                       <button
                         onClick={() =>
                           handleCreateNewProject(
