@@ -9,10 +9,10 @@ export const initialPortfolioData: PortfolioData = {
     "location": "Taipei, Taiwan",
     "categories": {
       "home": {
-        "name": "HOME",
+        "name": "關於我 HOME",
         "title": "程奕翔",
         "enName": "Interactive Media & Motion Design",
-        "description": "․專精動態影像製作、影像剪輯與後製互動介面設計\n․擅長科技與科幻風格，精準轉化知識型解說動畫\n․具備全流程獨立執行力，涵蓋前期腳本至後期動態\n․累積豐富的展覽場館與博物館動畫投影專案經驗"
+        "description": "●專精動態影像製作、影像剪輯與後製互動介面設計\n●擅長科技與科幻風格，精準轉化知識型解說動畫\n●具備全流程獨立執行力，涵蓋前期腳本至後期動態\n●累積豐富的展覽場館與博物館動畫投影專案經驗"
       },
       "motion": {
         "name": "動態影像/錄像",
@@ -32,7 +32,7 @@ export const initialPortfolioData: PortfolioData = {
     },
     "showreelTitle": "程奕翔",
     "showreelSubtitle": "Interactive Media & Motion Design",
-    "personalBio": "․專精動態影像製作、影像剪輯與後製互動介面設計\n․擅長科技與科幻風格，精準轉化知識型解說動畫\n․具備全流程獨立執行力，涵蓋前期腳本至後期動態\n․累積豐富的展覽場館與博物館動畫投影專案經驗",
+    "personalBio": "●專精動態影像製作、影像剪輯與後製互動介面設計\n●擅長科技與科幻風格，精準轉化知識型解說動畫\n●具備全流程獨立執行力，涵蓋前期腳本至後期動態\n●累積豐富的展覽場館與博物館動畫投影專案經驗",
     "showreelUrl": "",
     "showreelDescription": "專注於動態影像設計、互動裝置介面開發與大型沉浸式互動牆體驗。融合藝術美學與即時運算技術，創造觸動感官的數位體驗。",
     "homeVideos": [],
@@ -47,13 +47,14 @@ export const initialPortfolioData: PortfolioData = {
       "id": "proj-1791361385741",
       "category": "motion",
       "code": "宜蘭傳藝中心 世紀初戀・楊麗花",
-      "title": "楊麗花 巨星之路 年代紀錄",
+      "title": "楊麗花 巨星之路紀錄",
       "subtitle": "",
       "year": "2026",
       "client": "",
       "role": "影像製作",
       "tools": [
         "After Effects",
+        "Photoshop",
         "pika art"
       ],
       "description": "",
@@ -258,8 +259,8 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791361587166",
       "category": "motion",
-      "code": "臺中國家歌劇院",
-      "title": "ARTS NOVA 2023 主視覺PV",
+      "code": "臺中國家歌劇院 ARTS NOVA 2023",
+      "title": " 主視覺宣傳影片",
       "subtitle": "",
       "year": "2023",
       "client": "",
@@ -294,8 +295,8 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791361586129",
       "category": "motion",
-      "code": "臺中國家歌劇院",
-      "title": "韓國音樂劇《三劍客》宣傳PV",
+      "code": "臺中國家歌劇院 韓國音樂劇",
+      "title": "《三劍客》宣傳PV",
       "subtitle": "",
       "year": "2023",
       "client": "",
@@ -474,9 +475,9 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791356035250",
       "category": "motion",
-      "code": "臺中國家歌劇院",
-      "title": "2021 NTT-TIFA 國際藝術節 視覺動態設計",
-      "subtitle": "主視覺動畫&動態節目資訊表",
+      "code": "臺中國家歌劇院 2021 NTT-TIFA 國際藝術節",
+      "title": "主視覺動畫&動態節目資訊表",
+      "subtitle": "",
       "year": "2021",
       "client": "",
       "role": "動態設計",
@@ -620,7 +621,7 @@ export const initialPortfolioData: PortfolioData = {
       "id": "proj-1791385018637",
       "category": "motion",
       "code": "科博館 半導體的世界",
-      "title": " 電漿介紹",
+      "title": " 電漿介紹影片",
       "subtitle": "",
       "year": "2020",
       "client": "",
@@ -657,7 +658,7 @@ export const initialPortfolioData: PortfolioData = {
       "id": "proj-1791386013375",
       "category": "motion",
       "code": "科博館 半導體的世界",
-      "title": "半導體實驗",
+      "title": "什麼是半導體？ 半導體實驗",
       "subtitle": "",
       "year": "2020",
       "client": "",
@@ -747,9 +748,9 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791285986966",
       "category": "device",
-      "code": "台南兒童科學館_U01",
-      "title": "教育的時空旅行主題展",
-      "subtitle": "體感互動-國民健康操",
+      "code": "台南兒童科學館 教育的時空旅行主題展",
+      "title": "體感互動遊戲-國民健康操",
+      "subtitle": "",
       "year": "2024",
       "client": "",
       "role": "動畫製作／互動遊戲介面",
@@ -789,9 +790,9 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791285984973",
       "category": "device",
-      "code": "國立科學工藝博物館",
-      "title": "電信＠臺灣 5G行動導覽 APP",
-      "subtitle": "謎走 5G 解密電信廳 APP",
+      "code": "國立科學工藝博物館 電信＠臺灣 5G行動導覽",
+      "title": "謎走 5G 解密電信廳 APP",
+      "subtitle": "",
       "year": "2021",
       "client": "",
       "role": "視覺設計／APP介面設計／互動動畫／場景繪製",
@@ -874,8 +875,8 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791285982503",
       "category": "device",
-      "code": "國立科學工藝博物館_U01",
-      "title": "智慧醫療專區",
+      "code": "國立科學工藝博物館 智慧醫療專區",
+      "title": "醫療互動遊戲／互動裝置",
       "subtitle": "",
       "year": "2020",
       "client": "",
@@ -983,8 +984,8 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791285979480",
       "category": "device",
-      "code": "國立自然科學博物館_U01",
-      "title": "台積電「半導體的世界」互動機台",
+      "code": "國立自然科學博物館 半導體的世界",
+      "title": "半導體實驗-互動機台",
       "subtitle": "",
       "year": "2020",
       "client": "",
@@ -1082,7 +1083,7 @@ export const initialPortfolioData: PortfolioData = {
       "id": "motion-002",
       "category": "motion",
       "code": "科工館 交通夢想館",
-      "title": "機車安全防禦駕駛宣",
+      "title": "機車安全防禦駕駛宣導動畫",
       "subtitle": "",
       "year": "2018",
       "client": "",
@@ -1326,9 +1327,9 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "device-001",
       "category": "device",
-      "code": "臺灣蘭花生物科技園區_U01",
-      "title": "製蝶所",
-      "subtitle": "蘭花再生回收系統-互動裝置",
+      "code": "臺灣蘭花生物科技園區 製蝶所",
+      "title": "蘭花再生回收系統-互動裝置",
+      "subtitle": "",
       "year": "2019",
       "client": "",
       "role": "動畫製作／互動介面設計",
@@ -1398,9 +1399,9 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791347057379",
       "category": "device",
-      "code": "國立科學工藝博物館_U01",
-      "title": "動力與機械 智慧智造",
-      "subtitle": "機械手臂展演",
+      "code": "國立科學工藝博物館 動力與機械",
+      "title": "智慧智造-機械手臂展演",
+      "subtitle": "",
       "year": "2018",
       "client": "",
       "role": "動畫製作／燈光設定／機械動作設計",
@@ -1452,9 +1453,9 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "device-002",
       "category": "device",
-      "code": "國立科學工藝博物館_U01",
-      "title": "動力與機械-商店機器人",
-      "subtitle": "商店機器人",
+      "code": "國立科學工藝博物館 動力與機械",
+      "title": "互動商店機器人",
+      "subtitle": "",
       "year": "2018",
       "client": "",
       "role": "動畫製作／互動介面設計",
@@ -1500,8 +1501,8 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "device-003",
       "category": "device",
-      "code": "國立科學工藝博物館",
-      "title": "動力與機械-汽車安全系統 AR 體驗",
+      "code": "國立科學工藝博物館 動力與機械",
+      "title": "汽車安全系統 AR 體驗裝置",
       "subtitle": "",
       "year": "2018",
       "client": "",
@@ -1540,10 +1541,77 @@ export const initialPortfolioData: PortfolioData = {
       "order": 29
     },
     {
+      "id": "proj-1791449440557",
+      "category": "device",
+      "code": "高雄市立歷史博物館 見城館",
+      "title": "我們的舊城 VR 互動遊戲",
+      "subtitle": "",
+      "year": "2018",
+      "client": "",
+      "role": "動畫製作／介面設計",
+      "tools": [
+        "After Effects",
+        "Photoshop"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791449440557",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRS00.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791450048219",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/SW1_2.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791450048383",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/SW1_3.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791450048537",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRS%20(6).jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791450106132",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRUI%20(2).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791450106812",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRUI%20(3).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791450048685",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRUI%20(1).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791450107138",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRUI%20(4).gif",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 30
+    },
+    {
       "id": "device-004",
       "category": "device",
-      "code": "高雄市立歷史博物館_U01",
-      "title": "見城館-AR&VR裝置",
+      "code": "高雄市立歷史博物館 見城館",
+      "title": "舊城尋寶 AR 體驗",
       "subtitle": "",
       "year": "2018",
       "client": "",
@@ -1573,15 +1641,9 @@ export const initialPortfolioData: PortfolioData = {
           "caption": ""
         },
         {
-          "id": "m-1791355866706",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/SW1_2.gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791355867135",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/SW1_3.gif",
+          "id": "m-1791451588701",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/P001.jpg",
           "caption": ""
         },
         {
@@ -1613,46 +1675,23 @@ export const initialPortfolioData: PortfolioData = {
           "type": "gif",
           "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/LOB1%20(5).gif",
           "caption": ""
-        },
-        {
-          "id": "m-1791444985457",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRUI%20(1).gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791444985728",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRUI%20(2).gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791444986022",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRUI%20(3).gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791444986312",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU10.%E8%A6%8B%E5%9F%8E%E9%A4%A8%E8%A3%9D%E7%BD%AE/VRUI%20(4).gif",
-          "caption": ""
         }
       ],
       "featured": false,
-      "order": 30
+      "order": 31
     },
     {
       "id": "proj-1791305838784",
       "category": "device",
-      "code": "國立科學工藝博物館",
-      "title": "機車郊遊佛光山",
+      "code": "國立科學工藝博物館 交通夢想館",
+      "title": "機車郊遊佛光山 VR 遊戲體驗",
       "subtitle": "",
       "year": "2018",
       "client": "",
       "role": "動畫製作／插圖／介面",
       "tools": [
-        "After Effects"
+        "After Effects",
+        "Photoshop"
       ],
       "description": "",
       "coverMedia": {
@@ -1706,19 +1745,20 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 31
+      "order": 32
     },
     {
       "id": "proj-1791305899703",
       "category": "device",
-      "code": "國立科學工藝博物館",
+      "code": "國立科學工藝博物館 交通夢想館",
       "title": "智慧駕車遊高屏",
       "subtitle": "",
       "year": "2017",
       "client": "",
       "role": "動畫製作／動態特效／介面設計",
       "tools": [
-        "After Effects"
+        "After Effects",
+        "Photoshop"
       ],
       "description": "",
       "coverMedia": {
@@ -1747,6 +1787,18 @@ export const initialPortfolioData: PortfolioData = {
           "caption": ""
         },
         {
+          "id": "m-1791345608572",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU07.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%A7%95%E8%BB%8A%E9%81%8A%E9%AB%98%E5%B1%8F/004.jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791345608909",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU07.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%A7%95%E8%BB%8A%E9%81%8A%E9%AB%98%E5%B1%8F/009.jpg",
+          "caption": ""
+        },
+        {
           "id": "m-1791345556687",
           "type": "gif",
           "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU07.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%A7%95%E8%BB%8A%E9%81%8A%E9%AB%98%E5%B1%8F/ITS.gif",
@@ -1763,28 +1815,16 @@ export const initialPortfolioData: PortfolioData = {
           "type": "gif",
           "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU07.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%A7%95%E8%BB%8A%E9%81%8A%E9%AB%98%E5%B1%8F/ITS_2.gif",
           "caption": ""
-        },
-        {
-          "id": "m-1791345608572",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU07.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%A7%95%E8%BB%8A%E9%81%8A%E9%AB%98%E5%B1%8F/004.jpg",
-          "caption": ""
-        },
-        {
-          "id": "m-1791345608909",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/%E8%A3%9D%E7%BD%AE%E4%BB%8B%E9%9D%A2%E9%A1%9E/IU07.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E6%99%BA%E6%85%A7%E9%A7%95%E8%BB%8A%E9%81%8A%E9%AB%98%E5%B1%8F/009.jpg",
-          "caption": ""
         }
       ],
       "featured": false,
-      "order": 32
+      "order": 33
     },
     {
       "id": "proj-1791346298681",
       "category": "device",
-      "code": "江西龍虎山_U01",
-      "title": "中華文化館-互動機台",
+      "code": "江西龍虎山 中華文化館",
+      "title": "象形文字機台 & 彈指聞聲機台",
       "subtitle": "",
       "year": "2017",
       "client": "",
@@ -1845,13 +1885,13 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 33
+      "order": 34
     },
     {
       "id": "proj-1791441636219",
       "category": "device",
-      "code": "國立科學工藝博物館",
-      "title": "啟動創新實驗場-時空航站",
+      "code": "國立科學工藝博物館-啟動創新實驗場",
+      "title": "時空航站-窗景動畫",
       "subtitle": "",
       "year": "2017",
       "client": "",
@@ -1906,14 +1946,14 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 34
+      "order": 35
     },
     {
       "id": "wall-001",
       "category": "wall",
-      "code": "宜蘭傳藝中心_P01",
-      "title": " 世紀初戀・楊麗花 歌仔戲特展",
-      "subtitle": "互動投影牆",
+      "code": "宜蘭傳藝中心 世紀初戀・楊麗花",
+      "title": "歌仔戲特展-互動投影牆",
+      "subtitle": "",
       "year": "2026",
       "client": "",
       "role": "影像後製／投影動畫製作",
@@ -1943,14 +1983,14 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": true,
-      "order": 35
+      "order": 36
     },
     {
       "id": "wall-002",
       "category": "wall",
-      "code": "大阪世界博覽會_P01",
-      "title": " 故宮X工研院",
-      "subtitle": "五螢幕互動藝廊",
+      "code": "大阪世界博覽會 故宮X工研院",
+      "title": "AI 藝廊-五螢幕互動裝置",
+      "subtitle": "",
       "year": "2025",
       "client": "",
       "role": "互動影像設計／動畫製作",
@@ -1992,14 +2032,14 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 36
+      "order": 37
     },
     {
       "id": "wall-003",
       "category": "wall",
-      "code": "台南兒童科學館_P01",
-      "title": "教育的時空旅行主題展",
-      "subtitle": "文具變變變-互動投影牆",
+      "code": "台南兒童科學館 教育的時空旅行主題展",
+      "title": "文具變變變-互動投影牆",
+      "subtitle": "",
       "year": "2024",
       "client": "",
       "role": "動畫製作",
@@ -2040,14 +2080,14 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 37
+      "order": 38
     },
     {
       "id": "wall-004",
       "category": "wall",
-      "code": "台南兒童科學館_P02",
-      "title": "教育的時空旅行主題展",
-      "subtitle": "浮光掠影-AI問答牆",
+      "code": "台南兒童科學館 教育的時空旅行主題展",
+      "title": "浮光掠影-AI 問答牆",
+      "subtitle": "",
       "year": "2024",
       "client": "",
       "role": "動畫製作／互動牆概念設計",
@@ -2089,14 +2129,14 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 38
+      "order": 39
     },
     {
       "id": "proj-1791279366001",
       "category": "wall",
-      "code": "國立科學工藝博物館_P01",
-      "title": "智慧醫療專區",
-      "subtitle": "智慧醫療互動投影牆",
+      "code": "國立科學工藝博物館 智慧醫療專區",
+      "title": "智慧醫療互動投影牆",
+      "subtitle": "",
       "year": "2020",
       "client": "",
       "role": "動畫製作",
@@ -2132,14 +2172,14 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 39
+      "order": 40
     },
     {
       "id": "proj-1791280038533",
       "category": "wall",
-      "code": "臺灣蘭花生物科技園區_W01",
-      "title": "製蝶所",
-      "subtitle": "體感互動牆",
+      "code": "臺灣蘭花生物科技園區 製蝶所",
+      "title": "體感互動投影牆",
+      "subtitle": "",
       "year": "2019",
       "client": "",
       "role": "動畫製作／互動牆視覺設計／攝影",
@@ -2181,54 +2221,17 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 40
-    },
-    {
-      "id": "proj-1791276912512",
-      "category": "wall",
-      "code": "國立自然科學博物館_w01",
-      "title": "台積電「半導體的世界」",
-      "subtitle": "黃光區拍照互動牆",
-      "year": "2020",
-      "client": "",
-      "role": "牆面設計／動畫介面設計",
-      "tools": [
-        "After Effects",
-        "Photoshop"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791276912512",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/005/005_000000.png",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791277094845",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/005/005g.gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791277095470",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/005/0052_000001.png",
-          "caption": ""
-        }
-      ],
-      "featured": false,
       "order": 41
     },
     {
       "id": "proj-1791300964476",
       "category": "wall",
-      "code": "臺灣蘭花生物科技園區_P02",
-      "title": "製蝶所",
-      "subtitle": "空間投影",
+      "code": "臺灣蘭花生物科技園區 製蝶所",
+      "title": "空間投影",
+      "subtitle": "",
       "year": "2019",
       "client": "",
-      "role": "動畫製作",
+      "role": "動畫製作／空間設計",
       "tools": [
         "After Effects"
       ],
@@ -2269,10 +2272,47 @@ export const initialPortfolioData: PortfolioData = {
       "order": 42
     },
     {
+      "id": "proj-1791276912512",
+      "category": "wall",
+      "code": "國立自然科學博物館 半導體的世界",
+      "title": "黃光區拍照互動牆",
+      "subtitle": "",
+      "year": "2020",
+      "client": "",
+      "role": "牆面設計／動畫製作／介面設計",
+      "tools": [
+        "After Effects",
+        "Photoshop"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791276912512",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/005/005_000000.png",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791277094845",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/005/005g.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791277095470",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/005/0052_000001.png",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 43
+    },
+    {
       "id": "proj-1791281694488",
       "category": "wall",
-      "code": "台灣中油石油探索館",
-      "title": "互動式移動螢幕",
+      "code": "台灣中油 石油探索館",
+      "title": "石油在哪裡-互動式移動螢幕",
       "subtitle": "",
       "year": "2019",
       "client": "",
@@ -2316,74 +2356,20 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 43
-    },
-    {
-      "id": "proj-1791446130258",
-      "category": "wall",
-      "code": "高雄市立歷史博物館",
-      "title": "見城館-映像舊城",
-      "subtitle": "",
-      "year": "2018",
-      "client": "",
-      "role": "影像製作",
-      "tools": [
-        "After Effects",
-        "Photoshop"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791446130258",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/ssssww.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791446218306",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/OODD12.gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791446218767",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/lgoc%20(1).gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791446219141",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/lgoc%20(2).gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791446219574",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/lgoc%20(3).gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791446221464",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/lgoc%20(4).gif",
-          "caption": ""
-        }
-      ],
-      "featured": false,
       "order": 44
     },
     {
       "id": "proj-1791283125660",
       "category": "wall",
-      "code": "高雄市立歷史博物館_S01",
-      "title": "見城館",
-      "subtitle": "互動式移動透明螢幕",
+      "code": "高雄市立歷史博物館 見城館",
+      "title": "互動式移動透明螢幕",
+      "subtitle": "",
       "year": "2018",
       "client": "",
       "role": "動畫製作／動態元件繪製",
       "tools": [
-        "After Effects"
+        "After Effects",
+        "Photoshop"
       ],
       "description": "",
       "coverMedia": {
@@ -2482,16 +2468,72 @@ export const initialPortfolioData: PortfolioData = {
       "order": 45
     },
     {
+      "id": "proj-1791446130258",
+      "category": "wall",
+      "code": "高雄市立歷史博物館 見城館",
+      "title": "映像舊城 多媒體投影",
+      "subtitle": "",
+      "year": "2018",
+      "client": "",
+      "role": "動畫繪製／影像製作",
+      "tools": [
+        "After Effects",
+        "Photoshop"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791446130258",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/ssssww.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791446218306",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/OODD12.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791446218767",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/lgoc%20(1).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791446219141",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/lgoc%20(2).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791446219574",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/lgoc%20(3).gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791446221464",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/014.%E8%A6%8B%E5%9F%8E%E9%A4%A8-%E6%98%A0%E5%83%8F%E8%88%8A%E5%9F%8E/lgoc%20(4).gif",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 46
+    },
+    {
       "id": "proj-1791284814937",
       "category": "wall",
-      "code": "基隆城市產業博覽會_P01",
-      "title": "城市願景館",
-      "subtitle": "劇場投影",
+      "code": "基隆城市產業博覽會 城市願景館",
+      "title": "基隆騰飛劇場投影",
+      "subtitle": "",
       "year": "2017",
       "client": "",
       "role": "特效後製剪輯",
       "tools": [
-        "After Effects"
+        "After Effects",
+        "SketchUp"
       ],
       "description": "",
       "coverMedia": {
@@ -2581,13 +2623,13 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 46
+      "order": 47
     },
     {
       "id": "proj-1791442459431",
       "category": "wall",
-      "code": "江西龍虎山_P01",
-      "title": "中華文化館-戲曲浮空投影",
+      "code": "江西龍虎山 中華文化館",
+      "title": "戲曲浮空投影裝置",
       "subtitle": "",
       "year": "2017",
       "client": "",
@@ -2642,14 +2684,14 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 47
+      "order": 48
     },
     {
       "id": "proj-1791349867611",
       "category": "wall",
-      "code": "國立科學工藝博物館",
-      "title": "啟動創新實驗場",
-      "subtitle": "空間投影",
+      "code": "國立科學工藝博物館 啟動創新實驗場",
+      "title": "展覽引導動畫與空間投影",
+      "subtitle": "",
       "year": "2017",
       "client": "",
       "role": "動畫製作",
@@ -2703,7 +2745,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 48
+      "order": 49
     }
   ]
 };
