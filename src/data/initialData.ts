@@ -4,14 +4,15 @@ export const initialPortfolioData: PortfolioData = {
   "config": {
     "logoTitle": "IH",
     "logoSubtitle": "Portfolio",
-    "phone": "0987654321",
-    "email": "34567@gmail.com",
+    "phone": "",
+    "email": "kirahero7@gmail.com",
     "location": "Taipei, Taiwan",
     "categories": {
       "home": {
         "name": "HOME",
         "title": "程奕翔",
-        "enName": "Interactive Media & Motion Design"
+        "enName": "Interactive Media & Motion Design",
+        "description": "․專精動態影像製作、影像剪輯與後製互動介面設計\n․擅長科技與科幻風格，精準轉化知識型解說動畫\n․具備全流程獨立執行力，涵蓋前期腳本至後期動態\n․累積豐富的展覽場館與博物館動畫投影專案經驗"
       },
       "motion": {
         "name": "動態影像/錄像",
@@ -31,14 +32,14 @@ export const initialPortfolioData: PortfolioData = {
     },
     "showreelTitle": "程奕翔",
     "showreelSubtitle": "Interactive Media & Motion Design",
-    "personalBio": "專注於新媒體藝術、動態視覺與互動科技體驗設計。致力於探索感官介面與數位空間的交匯，為展覽、品牌與公共場域打造獨特的互動體驗。",
+    "personalBio": "․專精動態影像製作、影像剪輯與後製互動介面設計\n․擅長科技與科幻風格，精準轉化知識型解說動畫\n․具備全流程獨立執行力，涵蓋前期腳本至後期動態\n․累積豐富的展覽場館與博物館動畫投影專案經驗",
     "showreelUrl": "",
     "showreelDescription": "專注於動態影像設計、互動裝置介面開發與大型沉浸式互動牆體驗。融合藝術美學與即時運算技術，創造觸動感官的數位體驗。",
     "homeVideos": [],
     "footerTitle": "IH Portfolio",
     "footerBio": "IH STUDIO © 2026 Interactive & Motion Media Portfolio. All rights reserved.",
     "adminPassword": "admin",
-    "vimeoUrl": "https://vimeo.com",
+    "vimeoUrl": "",
     "socialLinks": [
       {
         "platform": "Vimeo",
@@ -47,66 +48,6 @@ export const initialPortfolioData: PortfolioData = {
     ]
   },
   "projects": [
-    {
-      "id": "proj-1791391989416",
-      "category": "motion",
-      "code": "開拓劇場",
-      "title": "陰間條例：冥戰篇",
-      "subtitle": "",
-      "year": "2022",
-      "client": "",
-      "role": "動態特效設計",
-      "tools": [
-        "After Effects"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791391989416",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/1111%20(2)_000000.png",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791392091343",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/1111%20(1)_000000.png",
-          "caption": ""
-        },
-        {
-          "id": "m-1791394420697",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/1111%20(3)_000000.png",
-          "caption": ""
-        },
-        {
-          "id": "m-1791394420970",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/1_1.gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791394421252",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/1_2.gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791394439611",
-          "type": "gif",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/1_3.gif",
-          "caption": ""
-        },
-        {
-          "id": "m-1791394456678",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/CREDIT.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 44
-    },
     {
       "id": "proj-1791390811028",
       "category": "motion",
@@ -172,7 +113,67 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 43
+      "order": 1
+    },
+    {
+      "id": "proj-1791391989416",
+      "category": "motion",
+      "code": "開拓劇場",
+      "title": "陰間條例：冥戰篇",
+      "subtitle": "",
+      "year": "2022",
+      "client": "",
+      "role": "動態特效設計",
+      "tools": [
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791391989416",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/1111%20(2)_000000.png",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791392091343",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/1111%20(1)_000000.png",
+          "caption": ""
+        },
+        {
+          "id": "m-1791394420697",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/1111%20(3)_000000.png",
+          "caption": ""
+        },
+        {
+          "id": "m-1791394420970",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/1_1.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791394421252",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/1_2.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791394439611",
+          "type": "gif",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/1_3.gif",
+          "caption": ""
+        },
+        {
+          "id": "m-1791394456678",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/21.%E9%99%B0%E9%96%93%E6%A2%9D%E4%BE%8B%EF%BC%9A%E5%86%A5%E6%88%B0%E7%AF%87/CREDIT.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 2
     },
     {
       "id": "proj-1791389629215",
@@ -221,7 +222,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 42
+      "order": 3
     },
     {
       "id": "proj-1791386013375",
@@ -264,44 +265,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 41
-    },
-    {
-      "id": "proj-1791385018637",
-      "category": "motion",
-      "code": "科博館 半導體的世界",
-      "title": " 電漿介紹",
-      "subtitle": "",
-      "year": "2020",
-      "client": "",
-      "role": "後製剪輯",
-      "tools": [
-        "After Effects",
-        "Premiere"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791385018637",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/12.%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF/%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF%E4%BB%8B%E7%B4%B9.mp4_20261007_225154.436.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791385115043",
-          "type": "youtube",
-          "url": "https://youtu.be/zlqlhDh6VjA",
-          "caption": ""
-        },
-        {
-          "id": "m-1791385118265",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/12.%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF/%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF%E4%BB%8B%E7%B4%B9.mp4_thumbs.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 40
+      "order": 4
     },
     {
       "id": "proj-1791361385741",
@@ -338,7 +302,44 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 1
+      "order": 5
+    },
+    {
+      "id": "proj-1791385018637",
+      "category": "motion",
+      "code": "科博館 半導體的世界",
+      "title": " 電漿介紹",
+      "subtitle": "",
+      "year": "2020",
+      "client": "",
+      "role": "後製剪輯",
+      "tools": [
+        "After Effects",
+        "Premiere"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791385018637",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/12.%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF/%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF%E4%BB%8B%E7%B4%B9.mp4_20261007_225154.436.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791385115043",
+          "type": "youtube",
+          "url": "https://youtu.be/zlqlhDh6VjA",
+          "caption": ""
+        },
+        {
+          "id": "m-1791385118265",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/12.%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF/%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%9A%84%E4%B8%96%E7%95%8C%20%E9%9B%BB%E6%BC%BF%E4%BB%8B%E7%B4%B9.mp4_thumbs.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 6
     },
     {
       "id": "proj-1791361591856",
@@ -374,7 +375,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 2
+      "order": 7
     },
     {
       "id": "proj-1791361589455",
@@ -410,7 +411,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 3
+      "order": 8
     },
     {
       "id": "proj-1791361588148",
@@ -458,7 +459,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 4
+      "order": 9
     },
     {
       "id": "proj-1791361587166",
@@ -494,7 +495,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 5
+      "order": 10
     },
     {
       "id": "proj-1791361586129",
@@ -536,7 +537,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 6
+      "order": 11
     },
     {
       "id": "proj-1791361584870",
@@ -578,7 +579,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 7
+      "order": 12
     },
     {
       "id": "proj-1791361581735",
@@ -614,7 +615,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 8
+      "order": 13
     },
     {
       "id": "proj-1791361574777",
@@ -656,7 +657,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 9
+      "order": 14
     },
     {
       "id": "proj-1791356035250",
@@ -710,7 +711,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 10
+      "order": 15
     },
     {
       "id": "proj-1791356017553",
@@ -758,7 +759,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 11
+      "order": 16
     },
     {
       "id": "proj-1791285986966",
@@ -800,7 +801,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 12
+      "order": 17
     },
     {
       "id": "proj-1791285984973",
@@ -885,7 +886,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 13
+      "order": 18
     },
     {
       "id": "proj-1791285982503",
@@ -994,7 +995,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 14
+      "order": 19
     },
     {
       "id": "proj-1791285979480",
@@ -1055,7 +1056,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 15
+      "order": 20
     },
     {
       "id": "motion-001",
@@ -1092,7 +1093,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": true,
-      "order": 16
+      "order": 21
     },
     {
       "id": "motion-002",
@@ -1129,7 +1130,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 17
+      "order": 22
     },
     {
       "id": "motion-003",
@@ -1221,7 +1222,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 18
+      "order": 23
     },
     {
       "id": "motion-004",
@@ -1270,7 +1271,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 19
+      "order": 24
     },
     {
       "id": "device-001",
@@ -1342,7 +1343,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": true,
-      "order": 20
+      "order": 25
     },
     {
       "id": "proj-1791347057379",
@@ -1396,7 +1397,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 21
+      "order": 26
     },
     {
       "id": "device-002",
@@ -1444,7 +1445,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 22
+      "order": 27
     },
     {
       "id": "device-003",
@@ -1486,7 +1487,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 23
+      "order": 28
     },
     {
       "id": "device-004",
@@ -1541,7 +1542,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 24
+      "order": 29
     },
     {
       "id": "proj-1791305838784",
@@ -1607,7 +1608,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 25
+      "order": 30
     },
     {
       "id": "proj-1791305899703",
@@ -1679,7 +1680,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 26
+      "order": 31
     },
     {
       "id": "proj-1791346298681",
@@ -1734,7 +1735,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 27
+      "order": 32
     },
     {
       "id": "wall-001",
@@ -1771,7 +1772,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": true,
-      "order": 28
+      "order": 33
     },
     {
       "id": "wall-002",
@@ -1820,7 +1821,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 29
+      "order": 34
     },
     {
       "id": "wall-003",
@@ -1868,7 +1869,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 30
+      "order": 35
     },
     {
       "id": "wall-004",
@@ -1917,7 +1918,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 31
+      "order": 36
     },
     {
       "id": "proj-1791276912512",
@@ -1954,7 +1955,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 32
+      "order": 37
     },
     {
       "id": "proj-1791279366001",
@@ -1997,7 +1998,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 33
+      "order": 38
     },
     {
       "id": "proj-1791280038533",
@@ -2046,7 +2047,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 34
+      "order": 39
     },
     {
       "id": "proj-1791300964476",
@@ -2094,7 +2095,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 35
+      "order": 40
     },
     {
       "id": "proj-1791281694488",
@@ -2144,7 +2145,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 36
+      "order": 41
     },
     {
       "id": "proj-1791283125660",
@@ -2192,7 +2193,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 37
+      "order": 42
     },
     {
       "id": "proj-1791284814937",
@@ -2288,7 +2289,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 38
+      "order": 43
     },
     {
       "id": "proj-1791349867611",
@@ -2349,7 +2350,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 39
+      "order": 44
     }
   ]
 };
