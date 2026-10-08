@@ -99,7 +99,7 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
     personalBio: data.config.personalBio !== undefined ? data.config.personalBio : (data.config.categories?.home?.description || ''),
     footerTitle: data.config.footerTitle || `${data.config.logoTitle || 'IH'} ${data.config.logoSubtitle || 'Portfolio'}`.trim(),
     footerBio: data.config.footerBio || 'IH STUDIO © 2026 Interactive & Motion Media Portfolio. All rights reserved.',
-    vimeoUrl: data.config.vimeoUrl || data.config.socialLinks?.find(s => s.platform.toLowerCase().includes('vimeo'))?.url || 'https://vimeo.com',
+    vimeoUrl: data.config.vimeoUrl?.trim() || data.config.socialLinks?.find(s => s.platform.toLowerCase().includes('vimeo'))?.url?.trim() || '',
     homeVideos: initialHomeVideos,
     categories: {
       home: {
@@ -475,15 +475,14 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
   // Save overall site config changes
   const handleSaveSiteConfig = () => {
     const firstVideo = siteConfig.homeVideos?.[0];
+    const vimeoUrl = siteConfig.vimeoUrl?.trim();
     const updatedConfig: SiteConfig = {
       ...siteConfig,
       showreelTitle: siteConfig.categories?.home?.title || siteConfig.showreelTitle || '2026 SHOWREEL',
       showreelSubtitle: siteConfig.categories?.home?.enName || siteConfig.showreelSubtitle || '',
       showreelUrl: firstVideo?.url || siteConfig.showreelUrl || '',
       showreelDescription: firstVideo?.description || siteConfig.showreelDescription || '',
-      socialLinks: [
-        { platform: 'Vimeo', url: siteConfig.vimeoUrl || 'https://vimeo.com' },
-      ],
+      socialLinks: vimeoUrl ? [{ platform: 'Vimeo', url: vimeoUrl }] : [],
     };
     onSaveData({
       config: updatedConfig,

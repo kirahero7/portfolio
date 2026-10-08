@@ -45,14 +45,18 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Contact Info (Plain text without link as requested) & Admin trigger */}
         <div className="flex flex-col items-end gap-1 text-right">
-          <div className="text-sm sm:text-base font-normal tracking-wide text-slate-200 flex items-center gap-1.5 justify-end">
-            <Phone className="w-3.5 h-3.5 text-slate-400 sm:hidden inline" />
-            <span>{config.phone || '0987654321'}</span>
-          </div>
-          <div className="text-sm sm:text-base font-normal tracking-wide text-slate-200 flex items-center gap-1.5 justify-end">
-            <Mail className="w-3.5 h-3.5 text-slate-400 sm:hidden inline" />
-            <span>{config.email || '34567@gmail.com'}</span>
-          </div>
+          {config.phone && (
+            <div className="text-sm sm:text-base font-normal tracking-wide text-slate-200 flex items-center gap-1.5 justify-end">
+              <Phone className="w-3.5 h-3.5 text-slate-400 sm:hidden inline" />
+              <span>{config.phone}</span>
+            </div>
+          )}
+          {config.email && (
+            <div className="text-sm sm:text-base font-normal tracking-wide text-slate-200 flex items-center gap-1.5 justify-end">
+              <Mail className="w-3.5 h-3.5 text-slate-400 sm:hidden inline" />
+              <span>{config.email}</span>
+            </div>
+          )}
 
           {/* Quick CMS / Edit button - ONLY visible when admin is authenticated */}
           {isAdminAuthenticated && (

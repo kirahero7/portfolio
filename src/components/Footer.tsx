@@ -11,7 +11,7 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = ({ config, isAdminAuthenticated, onOpenAdmin }) => {
   const footerTitle = config.footerTitle || `${config.logoTitle || 'IH'} ${config.logoSubtitle || 'Portfolio'}`.trim();
   const footerBio = config.footerBio || 'IH STUDIO © 2026 Interactive & Motion Media Portfolio. All rights reserved.';
-  const vimeoUrl = config.vimeoUrl || config.socialLinks?.find(s => s.platform.toLowerCase().includes('vimeo'))?.url || 'https://vimeo.com';
+  const vimeoUrl = config.vimeoUrl?.trim() || config.socialLinks?.find(s => s.platform.toLowerCase().includes('vimeo'))?.url?.trim() || '';
 
   return (
     <footer className="w-full border-t border-slate-800/80 bg-[#0f1620] py-10 px-4 sm:px-8 mt-auto">
