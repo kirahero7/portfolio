@@ -32,6 +32,7 @@ import {
   Play,
   Clipboard,
   ListPlus,
+  Zap,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -141,6 +142,9 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
   const [showAdminPassword, setShowAdminPassword] = useState(false);
   const [copiedAdminUrl, setCopiedAdminUrl] = useState(false);
   const [importError, setImportError] = useState('');
+  const [isSyncingSource, setIsSyncingSource] = useState(false);
+  const [syncStatusMsg, setSyncStatusMsg] = useState('');
+  const [pasteJsonText, setPasteJsonText] = useState('');
   const [showBatchPasteModal, setShowBatchPasteModal] = useState(false);
   const [batchUrlsText, setBatchUrlsText] = useState('');
   const [showCoverUploadFallback, setShowCoverUploadFallback] = useState(false);
@@ -524,13 +528,41 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
     setTimeout(() => setCopySuccess(false), 3000);
   };
 
+  // Sync current data directly to source code initialData.ts
+  const handleSyncToSource = async (customData?: PortfolioData) => {
+    setIsSyncingSource(true);
+    setSyncStatusMsg('');
+    const payload = customData || {
+      config: siteConfig,
+      projects: projectsList,
+    };
+    try {
+      const res = await fetch('/api/sync-source-data', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const result = await res.json();
+      if (result.success) {
+        setSyncStatusMsg(`✅ 成功永久寫入原始碼（共 ${result.count} 個作品，已寫入 initialData.ts）！`);
+        setTimeout(() => setSyncStatusMsg(''), 6000);
+      } else {
+        setSyncStatusMsg(`❌ 同步失敗：${result.error || '伺服器未接受資料'}`);
+      }
+    } catch (err: any) {
+      setSyncStatusMsg(`❌ 同步失敗：${err.message || '連線錯誤'}`);
+    } finally {
+      setIsSyncingSource(false);
+    }
+  };
+
   // Import JSON file
   const handleImportJSON = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
 
     const reader = new FileReader();
-    reader.onload = (event) => {
+    reader.onload = async (event) => {
       try {
         const parsed = JSON.parse(event.target?.result as string);
         if (parsed.config && Array.isArray(parsed.projects)) {
@@ -538,7 +570,8 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
           setProjectsList(parsed.projects);
           onSaveData(parsed);
           setImportError('');
-          alert('成功匯入作品集數據！');
+          await handleSyncToSource(parsed);
+          alert(`成功匯入作品集數據（共 ${parsed.projects.length} 個作品）！已同步固化至原始碼！`);
         } else {
           setImportError('JSON 格式不符：需包含 config 與 projects 欄位');
         }
@@ -547,6 +580,27 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
       }
     };
     reader.readAsText(file);
+  };
+
+  // Import from pasted JSON string
+  const handleImportFromPastedJson = async () => {
+    if (!pasteJsonText.trim()) return;
+    try {
+      const parsed = JSON.parse(pasteJsonText);
+      if (parsed.config && Array.isArray(parsed.projects)) {
+        setSiteConfig(parsed.config);
+        setProjectsList(parsed.projects);
+        onSaveData(parsed);
+        setImportError('');
+        await handleSyncToSource(parsed);
+        setPasteJsonText('');
+        alert(`成功匯入！共 ${parsed.projects.length} 個作品已永久固化至原始碼！`);
+      } else {
+        setImportError('JSON 格式不符：需包含 config 與 projects 欄位');
+      }
+    } catch (err) {
+      setImportError('JSON 解析錯誤：請確認貼上的文字為合法 JSON 格式');
+    }
   };
 
   const filteredProjects = projectsList.filter((p) => {
@@ -574,12 +628,29 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
               作品集內容管理與擴充系統 (Content Manager)
             </h2>
           </div>
-          <button
-            onClick={onClose}
-            className="p-1.5 text-slate-400 hover:text-white hover:bg-white/10 rounded transition-colors"
-          >
-            <X className="w-6 h-6" />
-          </button>
+          <div className="flex items-center gap-3">
+            {syncStatusMsg && (
+              <span className="text-xs font-medium text-emerald-400 hidden md:inline">
+                {syncStatusMsg}
+              </span>
+            )}
+            <button
+              type="button"
+              onClick={() => handleSyncToSource()}
+              disabled={isSyncingSource}
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-emerald-700 hover:bg-emerald-600 active:scale-95 disabled:opacity-50 text-white border border-emerald-500 rounded transition-all shadow-sm"
+              title="將目前所有作品與設定固化至伺服器原始碼 initialData.ts"
+            >
+              <Zap className="w-3.5 h-3.5 fill-current text-yellow-300" />
+              <span>{isSyncingSource ? '同步中...' : '同步至原始碼'}</span>
+            </button>
+            <button
+              onClick={onClose}
+              className="p-1.5 text-slate-400 hover:text-white hover:bg-white/10 rounded transition-colors"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </div>
         </div>
 
         {/* Tab Navigation */}
@@ -2065,12 +2136,47 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
           {/* TAB 3: BACKUP & EXPORT CODE */}
           {activeTab === 'backup' && (
             <div className="space-y-6 max-w-2xl mx-auto">
+              {/* PRIMARY SYNC TO SOURCE CODE */}
+              <div className="bg-[#182330] p-5 border-2 border-emerald-600/60 space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Zap className="w-5 h-5 text-yellow-400 fill-current" />
+                    <h3 className="text-sm font-bold text-white">
+                      固化至原始碼 (Permanent Source Code Sync)
+                    </h3>
+                  </div>
+                  <span className="text-xs px-2.5 py-1 bg-emerald-950/80 text-emerald-300 border border-emerald-700/80 font-mono">
+                    目前共有 {projectsList.length} 個作品
+                  </span>
+                </div>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  將目前畫面上還原與編輯的所有作品、分類與個人設定，<strong>直接且永久寫入伺服器 <code>src/data/initialData.ts</code> 原始碼</strong>。未來無論換瀏覽器、清除快取或重新部署，所有作品都會永久保留！
+                </p>
+
+                <div className="flex flex-wrap items-center gap-3 pt-1">
+                  <button
+                    onClick={() => handleSyncToSource()}
+                    disabled={isSyncingSource}
+                    className="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white text-xs font-bold flex items-center gap-2 shadow-lg transition-all active:scale-95 cursor-pointer"
+                  >
+                    <Zap className="w-4 h-4 fill-current text-yellow-300" />
+                    <span>{isSyncingSource ? '正在永久寫入中...' : `立即寫入原始碼 (${projectsList.length} 個作品)`}</span>
+                  </button>
+                  {syncStatusMsg && (
+                    <span className="text-xs font-medium text-emerald-300 bg-emerald-950/80 px-3 py-1.5 border border-emerald-800">
+                      {syncStatusMsg}
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              {/* JSON FILE BACKUP & RESTORE */}
               <div className="bg-[#182330] p-5 border border-slate-700 space-y-3">
                 <h3 className="text-sm font-bold text-white">
                   JSON 檔案備份與還原
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  您可以將目前所有作品清單與設定匯出為 JSON 備份檔，或隨時匯入既有的資料檔。
+                  您可以將目前所有作品清單與設定匯出為 JSON 備份檔，或選取電腦上的 JSON 備份檔進行匯入（匯入後會自動同步至原始碼）。
                 </p>
 
                 <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -2094,7 +2200,7 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                     className="px-4 py-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 text-xs font-medium text-white flex items-center gap-2"
                   >
                     <Upload className="w-4 h-4 text-sky-300" />
-                    <span>匯入 JSON 備份檔</span>
+                    <span>選取 JSON 檔案匯入並寫入原始碼</span>
                   </button>
                 </div>
 
@@ -2105,17 +2211,46 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                 )}
               </div>
 
+              {/* DIRECT JSON PASTE */}
+              <div className="bg-[#182330] p-5 border border-slate-700 space-y-3">
+                <h3 className="text-sm font-bold text-white">
+                  直接貼上 JSON 文本匯入
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  若手邊有備份 JSON 的文字內容，可直接貼在下方框內，一鍵匯入並永久固化至伺服器原始碼：
+                </p>
+
+                <textarea
+                  value={pasteJsonText}
+                  onChange={(e) => setPasteJsonText(e.target.value)}
+                  placeholder="在此貼上完整的 JSON 格式內容（包含 config 與 projects）..."
+                  rows={4}
+                  className="w-full bg-[#121922] border border-slate-700 p-2.5 text-xs text-slate-200 font-mono focus:border-indigo-500 focus:outline-none"
+                />
+
+                <button
+                  type="button"
+                  onClick={handleImportFromPastedJson}
+                  disabled={!pasteJsonText.trim() || isSyncingSource}
+                  className="px-4 py-2 bg-indigo-700 hover:bg-indigo-600 disabled:opacity-40 text-xs font-bold text-white flex items-center gap-2"
+                >
+                  <Upload className="w-4 h-4" />
+                  <span>解析 JSON 文字並永久寫入原始碼</span>
+                </button>
+              </div>
+
+              {/* COPY TS CODE */}
               <div className="bg-[#182330] p-5 border border-slate-700 space-y-3">
                 <h3 className="text-sm font-bold text-white">
                   複製 TypeScript 預設數據代碼
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  若您希望將目前在線上編輯擴充的所有專案直接固化至原始碼中，可點擊下方按鈕複製完整代碼，直接替換 <code>src/data/initialData.ts</code>。
+                  複製包含目前所有作品的完整 TypeScript 程式碼，可手動查看或備份。
                 </p>
 
                 <button
                   onClick={handleCopyCodeSnippet}
-                  className="px-4 py-2 bg-indigo-800 hover:bg-indigo-700 border border-indigo-500 text-xs font-medium text-white flex items-center gap-2"
+                  className="px-4 py-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 text-xs font-medium text-white flex items-center gap-2"
                 >
                   {copySuccess ? (
                     <>
@@ -2128,28 +2263,6 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                       <span>複製 initialData.ts 代碼</span>
                     </>
                   )}
-                </button>
-              </div>
-
-              <div className="bg-[#182330] p-5 border border-slate-700 space-y-3">
-                <h3 className="text-sm font-bold text-red-400">
-                  同步最新原始碼資料 / 重設本機快取
-                </h3>
-                <p className="text-xs text-slate-300 leading-relaxed">
-                  清空瀏覽器本機快取，並立即重新同步載入原始碼（initialData.ts）中的最新專案與配置。
-                </p>
-
-                <button
-                  onClick={() => {
-                    if (window.confirm('確定要清空本機暫存並重新載入最新原始碼資料嗎？此操作將覆蓋未導出的本機編輯。')) {
-                      onResetDefaults();
-                      onClose();
-                    }
-                  }}
-                  className="px-4 py-2 bg-red-950/60 hover:bg-red-900 border border-red-800 text-xs font-medium text-red-200 flex items-center gap-2"
-                >
-                  <RotateCcw className="w-4 h-4" />
-                  <span>清除本機暫存並同步最新原始碼</span>
                 </button>
               </div>
             </div>

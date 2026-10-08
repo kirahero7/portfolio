@@ -1,6 +1,4 @@
-import { PortfolioData } from '../types';
-
-export const initialPortfolioData: PortfolioData = {
+{
   "config": {
     "logoTitle": "IH",
     "logoSubtitle": "Portfolio",
@@ -2352,4 +2350,4 @@ export const initialPortfolioData: PortfolioData = {
       "order": 39
     }
   ]
-};
+}

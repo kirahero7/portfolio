@@ -134,24 +134,47 @@ export default function App() {
     }
   }, [isAdminAuthenticated]);
 
+  // Auto-sync client data to server initialData.ts
+  useEffect(() => {
+    if (data && Array.isArray(data.projects) && data.projects.length > 0) {
+      fetch('/api/sync-source-data', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+        .then((r) => r.json())
+        .then((res) => {
+          if (res?.success) {
+            console.log(`[AutoSync] Successfully synced ${res.count} projects to initialData.ts`);
+          }
+        })
+        .catch(() => {});
+    }
+  }, [data]);
+
   // Save changes to localStorage & state
   const handleSaveData = (newData: PortfolioData) => {
     setData(newData);
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(newData));
       localStorage.setItem('ih_portfolio_backup', JSON.stringify(newData));
+      // Immediate sync to server initialData.ts
+      fetch('/api/sync-source-data', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newData),
+      }).catch(() => {});
     } catch (e) {
       console.warn('Storage quota or error:', e);
     }
   };
 
-  // Reset to default data
+  // Reset to default data with safeguard
   const handleResetDefaults = () => {
-    localStorage.removeItem('ih_portfolio_custom_data_v1');
-    localStorage.removeItem('ih_portfolio_custom_data_v2');
-    localStorage.removeItem(STORAGE_KEY);
-    localStorage.removeItem('ih_portfolio_backup');
-    setData(initialPortfolioData);
+    if (window.confirm('確定要恢復預設值嗎？注意：此操作會清除當前修改。建議先匯出備份 JSON。')) {
+      localStorage.removeItem(STORAGE_KEY);
+      setData(initialPortfolioData);
+    }
   };
 
   // Filter projects by active category
