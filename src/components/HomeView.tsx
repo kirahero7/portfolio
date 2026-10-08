@@ -99,6 +99,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
   const homeMainTitle = config.categories?.home?.title || config.showreelTitle || '2026 SHOWREEL';
   const homeSubTitle = config.categories?.home?.enName || config.showreelSubtitle || 'Interactive Media & Motion Design Highlight';
   const personalBio = config.personalBio !== undefined ? config.personalBio : config.categories?.home?.description;
+  const personalPhoto = config.personalPhoto || 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop';
 
   return (
     <motion.section
@@ -108,21 +109,31 @@ export const HomeView: React.FC<HomeViewProps> = ({
       transition={{ duration: 0.25 }}
       className="w-full max-w-6xl mx-auto px-4 sm:px-8 pb-16"
     >
-      {/* 進入後主標題 (中文/主標) & 進入後副標題 (英文/副標) & 個人簡介 */}
-      <div className="mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold tracking-wider text-white uppercase">
-          {homeMainTitle}
-        </h2>
-        {homeSubTitle && (
-          <p className="text-xs font-semibold tracking-[0.2em] text-slate-400 uppercase mt-0.5 font-mono">
-            {homeSubTitle}
-          </p>
-        )}
-        {personalBio && (
-          <div className="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl">
-            <p className="whitespace-pre-line">{personalBio}</p>
-          </div>
-        )}
+      {/* 個人照片、主標題、副標題及個人簡介 */}
+      <div className="mb-10 grid grid-cols-1 lg:grid-cols-[minmax(0,0.7fr)_minmax(0,1.3fr)] gap-8 lg:gap-10 items-center">
+        <div className="relative aspect-square w-full max-w-[14rem] lg:max-w-[16rem] mx-auto overflow-hidden rounded-2xl border border-slate-700/60 bg-[#1b2633] shadow-xl">
+          <img
+            src={personalPhoto}
+            alt={`${homeMainTitle} 個人照片`}
+            className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+          />
+        </div>
+
+        <div>
+          <h2 className="text-xl sm:text-2xl font-bold tracking-wider text-white uppercase">
+            {homeMainTitle}
+          </h2>
+          {homeSubTitle && (
+            <p className="text-xs font-semibold tracking-[0.2em] text-slate-400 uppercase mt-0.5 font-mono">
+              {homeSubTitle}
+            </p>
+          )}
+          {personalBio && (
+            <div className="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl">
+              <p className="whitespace-pre-line">{personalBio}</p>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* 單一直排往下新增的多組內嵌影音 (有填寫影片網址時才顯示，無網址時完全隱藏不留空方塊) */}

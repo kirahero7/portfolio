@@ -1708,6 +1708,21 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                       className="w-full bg-[#182330] border border-slate-700 p-2 text-xs text-white focus:border-slate-400 focus:outline-none leading-relaxed"
                     />
                   </div>
+
+                  <div>
+                    <label className="block text-[11px] font-mono text-slate-400 mb-1">
+                      個人照片連結 / Personal Photo URL
+                    </label>
+                    <input
+                      type="url"
+                      value={siteConfig.personalPhoto || ''}
+                      onChange={(e) =>
+                        setSiteConfig({ ...siteConfig, personalPhoto: e.target.value })
+                      }
+                      placeholder="https://example.com/photo.jpg"
+                      className="w-full bg-[#182330] border border-slate-700 p-2 text-xs text-white focus:border-slate-400 focus:outline-none font-mono"
+                    />
+                  </div>
                 </div>
 
                 {/* 2. 動態影像/錄像 項目 */}

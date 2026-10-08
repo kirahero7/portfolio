@@ -60,6 +60,7 @@ export interface SiteConfig {
   showreelSubtitle?: string;
   showreelUrl?: string;
   showreelDescription?: string;
+  personalPhoto?: string;       // HOME 左側個人照片網址
   personalBio?: string;         // 個人簡介 (顯示於 HOME 主副標題下方)
   homeVideos?: HomeVideoItem[]; // 多組 HOME 內嵌影音
   footerTitle?: string;         // 最底部左側標題 (例如 'IH Portfolio')
