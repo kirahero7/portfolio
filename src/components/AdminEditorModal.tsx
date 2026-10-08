@@ -33,6 +33,7 @@ import {
   Clipboard,
   ListPlus,
   Zap,
+  GripVertical,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -257,6 +258,28 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
     onSaveData({
       config: siteConfig,
       projects: newList,
+    });
+  };
+
+  const handleReorderProjects = (sourceId: string, targetId: string) => {
+    if (sourceId === targetId) return;
+
+    const sourceIndex = projectsList.findIndex((project) => project.id === sourceId);
+    const targetIndex = projectsList.findIndex((project) => project.id === targetId);
+    if (sourceIndex === -1 || targetIndex === -1) return;
+
+    const nextList = [...projectsList];
+    const [movedProject] = nextList.splice(sourceIndex, 1);
+    nextList.splice(targetIndex, 0, movedProject);
+
+    nextList.forEach((project, index) => {
+      project.order = index + 1;
+    });
+
+    setProjectsList(nextList);
+    onSaveData({
+      config: siteConfig,
+      projects: nextList,
     });
   };
 
@@ -1399,12 +1422,23 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                         此分類無任何作品項目
                       </div>
                     ) : (
-                      filteredProjects.map((proj, idx) => {
+                      filteredProjects.map((proj) => {
                         const originalIdx = projectsList.findIndex((p) => p.id === proj.id);
                         return (
                           <div
                             key={proj.id}
-                            className="p-3 sm:p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 hover:bg-[#1b2737] transition-colors"
+                            draggable
+                            onDragStart={(event) => {
+                              event.dataTransfer.effectAllowed = 'move';
+                              event.dataTransfer.setData('text/plain', proj.id);
+                            }}
+                            onDragOver={(event) => event.preventDefault()}
+                            onDrop={(event) => {
+                              event.preventDefault();
+                              const sourceId = event.dataTransfer.getData('text/plain');
+                              handleReorderProjects(sourceId, proj.id);
+                            }}
+                            className="p-3 sm:p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 hover:bg-[#1b2737] transition-colors cursor-grab active:cursor-grabbing"
                           >
                             <div className="flex items-center gap-3">
                               {/* Thumbnail preview */}
@@ -1444,26 +1478,12 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
 
                             {/* Actions */}
                             <div className="flex items-center gap-2 self-end sm:self-center">
-                              {/* Move buttons */}
-                              <div className="flex items-center border border-slate-700 bg-slate-800">
-                                <button
-                                  type="button"
-                                  onClick={() => handleMoveProject(originalIdx, 'up')}
-                                  disabled={originalIdx === 0}
-                                  className="p-1 text-slate-400 hover:text-white disabled:opacity-30"
-                                  title="往上移"
-                                >
-                                  <ArrowUp className="w-3.5 h-3.5" />
-                                </button>
-                                <button
-                                  type="button"
-                                  onClick={() => handleMoveProject(originalIdx, 'down')}
-                                  disabled={originalIdx === projectsList.length - 1}
-                                  className="p-1 text-slate-400 hover:text-white disabled:opacity-30"
-                                  title="往下移"
-                                >
-                                  <ArrowDown className="w-3.5 h-3.5" />
-                                </button>
+                              <div
+                                className="flex items-center gap-1 border border-slate-700 bg-slate-800 px-1.5 py-1 text-slate-400 select-none"
+                                title="拖曳以排序"
+                              >
+                                <GripVertical className="w-3.5 h-3.5" />
+                                <span className="text-[10px]">拖曳</span>
                               </div>
 
                               <button
