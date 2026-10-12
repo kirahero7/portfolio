@@ -212,7 +212,7 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791361588148",
       "category": "motion",
-      "code": "科工館 電信＠臺灣 5G行動導覽",
+      "code": "國立科學工藝博物館 電信＠臺灣 5G行動導覽",
       "title": "闔關APP破關動畫",
       "subtitle": "",
       "year": "2023",
@@ -398,7 +398,7 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791361584870",
       "category": "motion",
-      "code": "科工館 電信＠臺灣 5G行動導覽",
+      "code": "國立科學工藝博物館 電信＠臺灣 5G行動導覽",
       "title": "5G 介紹動畫",
       "subtitle": "",
       "year": "2021",
@@ -530,7 +530,7 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791361574777",
       "category": "motion",
-      "code": "科工館 智慧醫療專區",
+      "code": "國立科學工藝博物館 智慧醫療專區",
       "title": "智慧診間",
       "subtitle": "",
       "year": "2020",
@@ -572,7 +572,7 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "motion-004",
       "category": "motion",
-      "code": "科博館 半導體的世界",
+      "code": "國立自然科學博物館 半導體的世界",
       "title": " 人物訪談",
       "subtitle": "",
       "year": "2020",
@@ -621,7 +621,7 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791385018637",
       "category": "motion",
-      "code": "科博館 半導體的世界",
+      "code": "國立自然科學博物館 半導體的世界",
       "title": " 電漿介紹影片",
       "subtitle": "",
       "year": "2020",
@@ -658,7 +658,7 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791386013375",
       "category": "motion",
-      "code": "科博館 半導體的世界",
+      "code": "國立自然科學博物館 半導體的世界",
       "title": "什麼是半導體？ 半導體實驗",
       "subtitle": "",
       "year": "2020",
@@ -701,7 +701,7 @@ export const initialPortfolioData: PortfolioData = {
     {
       "id": "proj-1791356017553",
       "category": "motion",
-      "code": "科工館 衣技織長",
+      "code": "國立科學工藝博物館 衣技織長",
       "title": "智慧穿戴解說動畫",
       "subtitle": "",
       "year": "2019",
@@ -747,6 +747,433 @@ export const initialPortfolioData: PortfolioData = {
       "order": 16
     },
     {
+      "id": "proj-1791816282995",
+      "category": "motion",
+      "code": "打狗英國領事館 時空潛望鏡",
+      "title": "展項紀錄",
+      "subtitle": "",
+      "year": "2019",
+      "client": "",
+      "role": "攝影／剪輯",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791816282995",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(15).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819256706",
+          "type": "youtube",
+          "url": "https://youtu.be/6tX0O_J4TLw",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 17
+    },
+    {
+      "id": "proj-1791814780211",
+      "category": "motion",
+      "code": "高雄市立歷史博物館 見城館",
+      "title": "展場紀錄",
+      "subtitle": "",
+      "year": "2019",
+      "client": "",
+      "role": "攝影／剪輯",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791814780211",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(4).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819293329",
+          "type": "youtube",
+          "url": "https://youtu.be/Uxw5N7hPYoo",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 18
+    },
+    {
+      "id": "proj-1791816382442",
+      "category": "motion",
+      "code": "國立科學工藝博物館 動力與機械",
+      "title": "展場紀錄",
+      "subtitle": "",
+      "year": "2019",
+      "client": "",
+      "role": "攝影／剪輯",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791816382443",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(5).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819322774",
+          "type": "youtube",
+          "url": "https://youtu.be/FTjkxiUObdI",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 19
+    },
+    {
+      "id": "proj-1791815004530",
+      "category": "motion",
+      "code": "臺中世界花卉博覽會 蘭海盛宴",
+      "title": "展項紀錄",
+      "subtitle": "",
+      "year": "2019",
+      "client": "",
+      "role": "攝影／剪輯",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791815004530",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(2).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819405869",
+          "type": "youtube",
+          "url": "https://youtu.be/b-V8pnNn-SI",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 20
+    },
+    {
+      "id": "proj-1791815107534",
+      "category": "motion",
+      "code": "國立科學工藝博物館 啟動創新實驗場 IRoadSafe",
+      "title": "展項紀錄",
+      "subtitle": "",
+      "year": "2019",
+      "client": "",
+      "role": "攝影／剪輯",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791815107534",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(1).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819658308",
+          "type": "youtube",
+          "url": "https://youtu.be/6bPE3YHuKuQ",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 21
+    },
+    {
+      "id": "motion-001",
+      "category": "motion",
+      "code": "國立科學工藝博物館 動力與機械",
+      "title": "智慧智造 智造時代",
+      "subtitle": "",
+      "year": "2018",
+      "client": "",
+      "role": "動畫製作",
+      "tools": [
+        "Cinema 4D",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "m1-c",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/15.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%8B%95%E5%8A%9B%E8%88%87%E6%A9%9F%E6%A2%B0%20%E6%99%BA%E6%85%A7%E6%99%BA%E9%80%A0/%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%8B%95%E5%8A%9B%E8%88%87%E6%A9%9F%E6%A2%B0%20%E6%99%BA%E6%85%A7%E6%99%BA%E9%80%A0.mp4_20261007_233002.280.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791387178223",
+          "type": "youtube",
+          "url": "https://youtu.be/4Z4IkzgEEoI",
+          "caption": ""
+        },
+        {
+          "id": "m-1791387178860",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/15.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%8B%95%E5%8A%9B%E8%88%87%E6%A9%9F%E6%A2%B0%20%E6%99%BA%E6%85%A7%E6%99%BA%E9%80%A0/%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%8B%95%E5%8A%9B%E8%88%87%E6%A9%9F%E6%A2%B0%20%E6%99%BA%E6%85%A7%E6%99%BA%E9%80%A0.mp4_thumbs.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": true,
+      "order": 22
+    },
+    {
+      "id": "proj-1791815188243",
+      "category": "motion",
+      "code": "國立臺灣博物館 博物館驚奇趣-古生物互動體驗",
+      "title": "展場紀錄",
+      "subtitle": "",
+      "year": "2018",
+      "client": "",
+      "role": "攝影／剪輯",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791815188243",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(14).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819359611",
+          "type": "youtube",
+          "url": "https://youtu.be/fkTxwjTVXJc",
+          "caption": ""
+        },
+        {
+          "id": "m-1791819368315",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(13).jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791815397617",
+          "type": "youtube",
+          "url": "https://youtu.be/OGHUzQRzsSY",
+          "caption": "時空旅人遊玩紀錄"
+        }
+      ],
+      "featured": false,
+      "order": 23
+    },
+    {
+      "id": "proj-1791815416828",
+      "category": "motion",
+      "code": "新竹300博覽會",
+      "title": "展場紀錄",
+      "subtitle": "",
+      "year": "2018",
+      "client": "",
+      "role": "攝影／剪輯",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791815416828",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(12).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819682459",
+          "type": "youtube",
+          "url": "https://youtu.be/WuAuHrRmW7g",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 24
+    },
+    {
+      "id": "proj-1791815628079",
+      "category": "motion",
+      "code": "國立科學工藝博物館 交通夢想 機車郊遊佛光山",
+      "title": "展項紀錄",
+      "subtitle": "",
+      "year": "2018",
+      "client": "",
+      "role": "攝影／剪輯",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791815628079",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(11).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819709979",
+          "type": "youtube",
+          "url": "https://youtu.be/NP7Q6tyg4G4",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 25
+    },
+    {
+      "id": "motion-002",
+      "category": "motion",
+      "code": "國立科學工藝博物館 交通夢想館",
+      "title": "機車安全防禦駕駛宣導動畫",
+      "subtitle": "",
+      "year": "2018",
+      "client": "",
+      "role": "動畫製作",
+      "tools": [
+        "After Effects",
+        "Illustrator"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "m2-c",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/16.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E4%BA%A4%E9%80%9A%E5%A4%A2%E6%83%B3%E9%A4%A8%20%E6%A9%9F%E8%BB%8A%E5%AE%89%E5%85%A8%E5%AE%A3%E5%B0%8E/%E4%BA%A4%E9%80%9A%E5%A4%A2%E6%83%B3%E9%A4%A8%20%E6%A9%9F%E8%BB%8A%E5%AE%89%E5%85%A8%E9%98%B2%E7%A6%A6%E9%A7%95%E9%A7%9B%E5%AE%A3%E5%B0%8E.mp4_20261007_233550.788.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791387590533",
+          "type": "youtube",
+          "url": "https://youtu.be/ifB-LNlH0AI",
+          "caption": ""
+        },
+        {
+          "id": "m-1791387591007",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/16.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E4%BA%A4%E9%80%9A%E5%A4%A2%E6%83%B3%E9%A4%A8%20%E6%A9%9F%E8%BB%8A%E5%AE%89%E5%85%A8%E5%AE%A3%E5%B0%8E/%E4%BA%A4%E9%80%9A%E5%A4%A2%E6%83%B3%E9%A4%A8%20%E6%A9%9F%E8%BB%8A%E5%AE%89%E5%85%A8%E9%98%B2%E7%A6%A6%E9%A7%95%E9%A7%9B%E5%AE%A3%E5%B0%8E.mp4_thumbs.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 26
+    },
+    {
+      "id": "proj-1791815762317",
+      "category": "motion",
+      "code": "廣州長隆熊貓酒店 動雕劇場",
+      "title": "熊貓奇幻劇場紀錄",
+      "subtitle": "",
+      "year": "2018",
+      "client": "",
+      "role": "剪輯／動態影像製作",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791815762317",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(10).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819734849",
+          "type": "youtube",
+          "url": "https://youtu.be/e7ty92HKXqQ",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 27
+    },
+    {
+      "id": "proj-1791815992114",
+      "category": "motion",
+      "code": "國立科學工藝博物館 健康探索廳",
+      "title": "展場紀錄",
+      "subtitle": "",
+      "year": "2018",
+      "client": "",
+      "role": "攝影／剪輯",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791815992114",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(9).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819755197",
+          "type": "youtube",
+          "url": "https://youtu.be/FueDi4Z5d6E",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 28
+    },
+    {
+      "id": "proj-1791816183567",
+      "category": "motion",
+      "code": "國立科學工藝博物館 交通夢想館 智慧駕車遊高屏",
+      "title": "展場紀錄",
+      "subtitle": "",
+      "year": "2018",
+      "client": "",
+      "role": "攝影／剪輯",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791816183567",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(8).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819783186",
+          "type": "youtube",
+          "url": "https://youtu.be/2EDd2C9Zkcg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 29
+    },
+    {
       "id": "proj-1791285986966",
       "category": "device",
       "code": "台南兒童科學館 教育的時空旅行主題展",
@@ -786,7 +1213,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 17
+      "order": 30
     },
     {
       "id": "proj-1791285984973",
@@ -871,7 +1298,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 18
+      "order": 31
     },
     {
       "id": "proj-1791285982503",
@@ -980,7 +1407,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 19
+      "order": 32
     },
     {
       "id": "proj-1791285979480",
@@ -1041,86 +1468,12 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 20
-    },
-    {
-      "id": "motion-001",
-      "category": "motion",
-      "code": "科工館 動力與機械",
-      "title": "智慧智造",
-      "subtitle": "",
-      "year": "2018",
-      "client": "",
-      "role": "動畫製作",
-      "tools": [
-        "Cinema 4D",
-        "After Effects"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "m1-c",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/15.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%8B%95%E5%8A%9B%E8%88%87%E6%A9%9F%E6%A2%B0%20%E6%99%BA%E6%85%A7%E6%99%BA%E9%80%A0/%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%8B%95%E5%8A%9B%E8%88%87%E6%A9%9F%E6%A2%B0%20%E6%99%BA%E6%85%A7%E6%99%BA%E9%80%A0.mp4_20261007_233002.280.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791387178223",
-          "type": "youtube",
-          "url": "https://youtu.be/4Z4IkzgEEoI",
-          "caption": ""
-        },
-        {
-          "id": "m-1791387178860",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/15.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%8B%95%E5%8A%9B%E8%88%87%E6%A9%9F%E6%A2%B0%20%E6%99%BA%E6%85%A7%E6%99%BA%E9%80%A0/%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E5%8B%95%E5%8A%9B%E8%88%87%E6%A9%9F%E6%A2%B0%20%E6%99%BA%E6%85%A7%E6%99%BA%E9%80%A0.mp4_thumbs.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": true,
-      "order": 21
-    },
-    {
-      "id": "motion-002",
-      "category": "motion",
-      "code": "科工館 交通夢想館",
-      "title": "機車安全防禦駕駛宣導動畫",
-      "subtitle": "",
-      "year": "2018",
-      "client": "",
-      "role": "動畫製作",
-      "tools": [
-        "After Effects",
-        "Illustrator"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "m2-c",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/16.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E4%BA%A4%E9%80%9A%E5%A4%A2%E6%83%B3%E9%A4%A8%20%E6%A9%9F%E8%BB%8A%E5%AE%89%E5%85%A8%E5%AE%A3%E5%B0%8E/%E4%BA%A4%E9%80%9A%E5%A4%A2%E6%83%B3%E9%A4%A8%20%E6%A9%9F%E8%BB%8A%E5%AE%89%E5%85%A8%E9%98%B2%E7%A6%A6%E9%A7%95%E9%A7%9B%E5%AE%A3%E5%B0%8E.mp4_20261007_233550.788.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791387590533",
-          "type": "youtube",
-          "url": "https://youtu.be/ifB-LNlH0AI",
-          "caption": ""
-        },
-        {
-          "id": "m-1791387591007",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/16.%E7%A7%91%E5%B7%A5%E9%A4%A8%20%E4%BA%A4%E9%80%9A%E5%A4%A2%E6%83%B3%E9%A4%A8%20%E6%A9%9F%E8%BB%8A%E5%AE%89%E5%85%A8%E5%AE%A3%E5%B0%8E/%E4%BA%A4%E9%80%9A%E5%A4%A2%E6%83%B3%E9%A4%A8%20%E6%A9%9F%E8%BB%8A%E5%AE%89%E5%85%A8%E9%98%B2%E7%A6%A6%E9%A7%95%E9%A7%9B%E5%AE%A3%E5%B0%8E.mp4_thumbs.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 22
+      "order": 33
     },
     {
       "id": "motion-003",
       "category": "motion",
-      "code": "科工館 交通夢想館",
+      "code": "國立科學工藝博物館 交通夢想館",
       "title": "智慧駕車技術介紹動畫",
       "subtitle": "",
       "year": "2017",
@@ -1207,12 +1560,97 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 23
+      "order": 34
+    },
+    {
+      "id": "proj-1791814637770",
+      "category": "motion",
+      "code": "基隆城市產業博覽會 城市願景館",
+      "title": "展場紀錄",
+      "subtitle": "",
+      "year": "2017",
+      "client": "",
+      "role": "攝影／剪輯",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791814637770",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(7).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819519720",
+          "type": "youtube",
+          "url": "https://youtu.be/QJ8jxvZBejw",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 35
+    },
+    {
+      "id": "proj-1791814849558",
+      "category": "motion",
+      "code": "江西龍虎山 中華文化館",
+      "title": "展項紀錄",
+      "subtitle": "",
+      "year": "2017",
+      "client": "",
+      "role": "剪輯",
+      "tools": [
+        "Premiere"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791814849559",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(3).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819452201",
+          "type": "youtube",
+          "url": "https://youtu.be/OVyobSQ9daw",
+          "caption": ""
+        },
+        {
+          "id": "m-1791814908324",
+          "type": "youtube",
+          "url": "https://youtu.be/bexsHMEU2Z4",
+          "caption": ""
+        },
+        {
+          "id": "m-1791814908949",
+          "type": "youtube",
+          "url": "https://youtu.be/Ont30CUlBlw",
+          "caption": ""
+        },
+        {
+          "id": "m-1791814909623",
+          "type": "youtube",
+          "url": "https://youtu.be/dsNq60mSK9I",
+          "caption": ""
+        },
+        {
+          "id": "m-1791814910179",
+          "type": "youtube",
+          "url": "https://youtu.be/Z_dwIdTAazo",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 36
     },
     {
       "id": "proj-1791390811028",
       "category": "motion",
-      "code": "科工館 交通夢想館 ",
+      "code": "國立科學工藝博物館 交通夢想館 ",
       "title": "APP使用指南",
       "subtitle": "",
       "year": "2017",
@@ -1274,12 +1712,43 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 24
+      "order": 37
+    },
+    {
+      "id": "proj-1791814386364",
+      "category": "motion",
+      "code": "國立科學工藝博物館 啟動創新實驗場",
+      "title": "展場紀錄",
+      "subtitle": "",
+      "year": "2017",
+      "client": "",
+      "role": "攝影／剪輯",
+      "tools": [
+        "Premiere",
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791814386364",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/COVER/VCOVER%20(6).jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791819489075",
+          "type": "youtube",
+          "url": "https://youtu.be/WeNWiz_3Yrs",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 38
     },
     {
       "id": "proj-1791389629215",
       "category": "motion",
-      "code": "科工館 啟動創新實驗場",
+      "code": "國立科學工藝博物館 啟動創新實驗場",
       "title": "細胞培養流程技術影片／骨釘介紹",
       "subtitle": "",
       "year": "2017",
@@ -1323,7 +1792,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 25
+      "order": 39
     },
     {
       "id": "device-001",
@@ -1395,7 +1864,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": true,
-      "order": 26
+      "order": 40
     },
     {
       "id": "proj-1791347057379",
@@ -1449,7 +1918,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 27
+      "order": 41
     },
     {
       "id": "device-002",
@@ -1497,7 +1966,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 28
+      "order": 42
     },
     {
       "id": "device-003",
@@ -1539,7 +2008,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 29
+      "order": 43
     },
     {
       "id": "proj-1791449440557",
@@ -1606,7 +2075,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 30
+      "order": 44
     },
     {
       "id": "device-004",
@@ -1679,7 +2148,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 31
+      "order": 45
     },
     {
       "id": "proj-1791305838784",
@@ -1746,7 +2215,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 32
+      "order": 46
     },
     {
       "id": "proj-1791305899703",
@@ -1819,7 +2288,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 33
+      "order": 47
     },
     {
       "id": "proj-1791346298681",
@@ -1886,7 +2355,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 34
+      "order": 48
     },
     {
       "id": "proj-1791441636219",
@@ -1947,7 +2416,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 35
+      "order": 49
     },
     {
       "id": "wall-001",
@@ -1984,7 +2453,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": true,
-      "order": 36
+      "order": 50
     },
     {
       "id": "wall-002",
@@ -2033,7 +2502,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 37
+      "order": 51
     },
     {
       "id": "wall-003",
@@ -2081,7 +2550,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 38
+      "order": 52
     },
     {
       "id": "wall-004",
@@ -2130,7 +2599,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 39
+      "order": 53
     },
     {
       "id": "proj-1791279366001",
@@ -2173,7 +2642,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 40
+      "order": 54
     },
     {
       "id": "proj-1791280038533",
@@ -2222,7 +2691,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 41
+      "order": 55
     },
     {
       "id": "proj-1791300964476",
@@ -2270,7 +2739,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 42
+      "order": 56
     },
     {
       "id": "proj-1791276912512",
@@ -2307,7 +2776,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 43
+      "order": 57
     },
     {
       "id": "proj-1791281694488",
@@ -2357,7 +2826,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 44
+      "order": 58
     },
     {
       "id": "proj-1791283125660",
@@ -2466,7 +2935,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 45
+      "order": 59
     },
     {
       "id": "proj-1791446130258",
@@ -2521,7 +2990,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 46
+      "order": 60
     },
     {
       "id": "proj-1791284814937",
@@ -2624,7 +3093,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 47
+      "order": 61
     },
     {
       "id": "proj-1791442459431",
@@ -2685,7 +3154,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 48
+      "order": 62
     },
     {
       "id": "proj-1791349867611",
@@ -2746,7 +3215,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 49
+      "order": 63
     }
   ]
 };
