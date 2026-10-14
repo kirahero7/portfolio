@@ -45,50 +45,12 @@ export const initialPortfolioData: PortfolioData = {
   },
   "projects": [
     {
-      "id": "proj-1791361385741",
-      "category": "motion",
-      "code": "宜蘭傳藝中心 世紀初戀・楊麗花",
-      "title": "楊麗花 巨星之路紀錄",
-      "subtitle": "",
-      "year": "2026",
-      "client": "",
-      "role": "影像製作",
-      "tools": [
-        "After Effects",
-        "Photoshop",
-        "pika art"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791361385741",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/01.%E6%A5%8A%E9%BA%97%E8%8A%B1%20%E5%B7%A8%E6%98%9F%E4%B9%8B%E8%B7%AF/0001.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791370811964",
-          "type": "youtube",
-          "url": "https://youtube.com/shorts/sk0568e2MwI?feature=share",
-          "caption": ""
-        },
-        {
-          "id": "m-1791370812493",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/01.%E6%A5%8A%E9%BA%97%E8%8A%B1%20%E5%B7%A8%E6%98%9F%E4%B9%8B%E8%B7%AF/%E6%A5%8A%E9%BA%97%E8%8A%B1%20%E5%B7%A8%E6%98%9F%E4%B9%8B%E8%B7%AF.mp4_thumbs.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 1
-    },
-    {
       "id": "proj-1791361591856",
       "category": "motion",
       "code": "臺中國家歌劇院",
       "title": "十周年紀念動態影片",
       "subtitle": "",
-      "year": "2025",
+      "year": "2026",
       "client": "",
       "role": "影像製作／剪輯",
       "tools": [
@@ -116,7 +78,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 2
+      "order": 1
     },
     {
       "id": "proj-1791361589455",
@@ -124,7 +86,7 @@ export const initialPortfolioData: PortfolioData = {
       "code": "臺中國家歌劇院",
       "title": "青年席快速通關宣導",
       "subtitle": "",
-      "year": "2024",
+      "year": "2025",
       "client": "",
       "role": "動畫製作",
       "tools": [
@@ -152,7 +114,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 3
+      "order": 2
     },
     {
       "id": "proj-1791440078366",
@@ -160,7 +122,7 @@ export const initialPortfolioData: PortfolioData = {
       "code": "新古典室內樂團《極境尋光-走進江賢二》",
       "title": "劇場影像製作",
       "subtitle": "",
-      "year": "2024",
+      "year": "2024-2025",
       "client": "",
       "role": "影像製作",
       "tools": [
@@ -207,7 +169,87 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
+      "order": 3
+    },
+    {
+      "id": "proj-1791361385741",
+      "category": "motion",
+      "code": "宜蘭傳藝中心 世紀初戀・楊麗花",
+      "title": "楊麗花 巨星之路紀錄",
+      "subtitle": "",
+      "year": "2025",
+      "client": "",
+      "role": "影像製作",
+      "tools": [
+        "After Effects",
+        "Photoshop",
+        "pika art"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791361385741",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/01.%E6%A5%8A%E9%BA%97%E8%8A%B1%20%E5%B7%A8%E6%98%9F%E4%B9%8B%E8%B7%AF/0001.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791370811964",
+          "type": "youtube",
+          "url": "https://youtube.com/shorts/sk0568e2MwI?feature=share",
+          "caption": ""
+        },
+        {
+          "id": "m-1791370812493",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/01.%E6%A5%8A%E9%BA%97%E8%8A%B1%20%E5%B7%A8%E6%98%9F%E4%B9%8B%E8%B7%AF/%E6%A5%8A%E9%BA%97%E8%8A%B1%20%E5%B7%A8%E6%98%9F%E4%B9%8B%E8%B7%AF.mp4_thumbs.jpg",
+          "caption": ""
+        }
+      ],
+      "featured": false,
       "order": 4
+    },
+    {
+      "id": "proj-1791361586129",
+      "category": "motion",
+      "code": "臺中國家歌劇院 韓國音樂劇",
+      "title": "《三劍客》宣傳PV",
+      "subtitle": "",
+      "year": "2023",
+      "client": "",
+      "role": "動畫製作",
+      "tools": [
+        "After Effects"
+      ],
+      "description": "",
+      "coverMedia": {
+        "id": "cov-1791361586129",
+        "type": "image",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/06.%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV/210021.jpg",
+        "caption": ""
+      },
+      "mediaList": [
+        {
+          "id": "m-1791374981646",
+          "type": "youtube",
+          "url": "https://youtu.be/4LUKs-61_rs",
+          "caption": ""
+        },
+        {
+          "id": "m-1791446627971",
+          "type": "image",
+          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/06.%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV/%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV%20F.mov_thumbs.jpg",
+          "caption": ""
+        },
+        {
+          "id": "m-1791374983000",
+          "type": "youtube",
+          "url": "https://youtu.be/e6ZncIuImaY?si=Z7A8zqKTdB89Xmzw",
+          "caption": ""
+        }
+      ],
+      "featured": false,
+      "order": 5
     },
     {
       "id": "proj-1791361588148",
@@ -255,7 +297,7 @@ export const initialPortfolioData: PortfolioData = {
         }
       ],
       "featured": false,
-      "order": 5
+      "order": 6
     },
     {
       "id": "proj-1791361587166",
@@ -287,48 +329,6 @@ export const initialPortfolioData: PortfolioData = {
           "id": "m-1791374736797",
           "type": "image",
           "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/05.%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20ARTS%20NOVA%202023%20%E4%B8%BB%E8%A6%96%E8%A6%BAPV/%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%20ARTS%20NOVA%202023.mov_thumbs.jpg",
-          "caption": ""
-        }
-      ],
-      "featured": false,
-      "order": 6
-    },
-    {
-      "id": "proj-1791361586129",
-      "category": "motion",
-      "code": "臺中國家歌劇院 韓國音樂劇",
-      "title": "《三劍客》宣傳PV",
-      "subtitle": "",
-      "year": "2023",
-      "client": "",
-      "role": "動畫製作",
-      "tools": [
-        "After Effects"
-      ],
-      "description": "",
-      "coverMedia": {
-        "id": "cov-1791361586129",
-        "type": "image",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/06.%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV/210021.jpg",
-        "caption": ""
-      },
-      "mediaList": [
-        {
-          "id": "m-1791374981646",
-          "type": "youtube",
-          "url": "https://youtu.be/4LUKs-61_rs",
-          "caption": ""
-        },
-        {
-          "id": "m-1791446627971",
-          "type": "image",
-          "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.VIDEO/06.%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV/%E9%9F%93%E5%9C%8B%E9%9F%B3%E6%A8%82%E5%8A%87%E3%80%8A%E4%B8%89%E5%8A%8D%E5%AE%A2%E3%80%8B%E5%AE%A3%E5%82%B3PV%20F.mov_thumbs.jpg",
-          "caption": ""
-        },
-        {
-          "id": "m-1791374983000",
-          "type": "youtube",
-          "url": "https://youtu.be/e6ZncIuImaY?si=Z7A8zqKTdB89Xmzw",
           "caption": ""
         }
       ],
@@ -443,7 +443,7 @@ export const initialPortfolioData: PortfolioData = {
       "code": "MARS 戰神乳清蛋白",
       "title": "主視覺動態",
       "subtitle": "",
-      "year": "2021",
+      "year": "2022",
       "client": "",
       "role": "動畫製作",
       "tools": [
@@ -2509,7 +2509,7 @@ export const initialPortfolioData: PortfolioData = {
       "code": "宜蘭傳藝中心 世紀初戀・楊麗花",
       "title": "歌仔戲特展-互動投影牆",
       "subtitle": "",
-      "year": "2026",
+      "year": "2025",
       "client": "",
       "role": "影像後製／投影動畫製作",
       "tools": [
