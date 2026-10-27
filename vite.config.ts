@@ -54,9 +54,11 @@ function syncSourceDataPlugin(): Plugin {
   };
 }
 
-export default defineConfig(() => {
+export default defineConfig(({ command }) => {
   return {
-    base: './',
+    // The production site is hosted from the /portfolio/ GitHub Pages project path.
+    // Keep local development at the domain root.
+    base: command === 'build' ? '/portfolio/' : '/',
     plugins: [react(), tailwindcss(), syncSourceDataPlugin()],
     resolve: {
       alias: {
