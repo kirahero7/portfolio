@@ -1559,6 +1559,24 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                   </div>
                 </div>
 
+                <div>
+                  <label className="block text-xs font-mono text-slate-300 uppercase mb-1">
+                    瀏覽器分頁標題 / Browser Tab Title
+                  </label>
+                  <input
+                    type="text"
+                    value={siteConfig.pageTitle ?? 'IH Portfolio - 互動影像作品集'}
+                    onChange={(e) =>
+                      setSiteConfig({ ...siteConfig, pageTitle: e.target.value })
+                    }
+                    placeholder="IH Portfolio - 互動影像作品集"
+                    className="w-full bg-[#121922] border border-slate-700 p-2 text-sm text-white focus:border-slate-400 focus:outline-none"
+                  />
+                  <p className="text-[11px] text-slate-500 mt-1">
+                    儲存網站設定後立即更新瀏覽器分頁名稱；留白時使用預設標題。
+                  </p>
+                </div>
+
                 <div className="grid grid-cols-2 gap-3">
                   <div>
                     <label className="block text-xs font-mono text-slate-300 uppercase mb-1">
@@ -1685,7 +1703,7 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
 
                   <div>
                     <label className="block text-[11px] font-mono text-slate-400 mb-1">
-                      個人簡介 (Personal Bio - 顯示於主副標題下方)
+                      個人簡介 (Personal Bio - 顯示於主副標題下方；使用 **文字** 顯示粗體)
                     </label>
                     <textarea
                       rows={3}
@@ -1707,6 +1725,9 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                       placeholder="請輸入個人簡介、背景專長或設計理念..."
                       className="w-full bg-[#182330] border border-slate-700 p-2 text-xs text-white focus:border-slate-400 focus:outline-none leading-relaxed"
                     />
+                    <p className="text-[11px] text-slate-500 mt-1">
+                      在要加粗的詞句前後各加兩個星號，例如：專長是 **互動設計** 與動態影像。
+                    </p>
                   </div>
 
                   <div>

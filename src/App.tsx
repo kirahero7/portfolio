@@ -14,6 +14,74 @@ import { AnimatePresence } from 'motion/react';
 
 const STORAGE_KEY = 'ih_portfolio_custom_data_v3';
 const AUTH_STORAGE_KEY = 'ih_portfolio_admin_auth_v1';
+const CATEGORY_KEYS: CategoryKey[] = ['home', 'motion', 'device', 'wall'];
+const CATEGORY_PATHS: Record<CategoryKey, string> = {
+  home: 'home',
+  motion: 'motion-graphics-videos',
+  device: 'installations-interfaces',
+  wall: 'screens-projections',
+};
+const PROJECT_ROUTE_PREFIXES: Record<'motion' | 'device' | 'wall', string> = {
+  motion: 'mv',
+  device: 'dv',
+  wall: 'pj',
+};
+
+const getDeploymentBasePath = (pathname: string) =>
+  pathname === '/portfolio' || pathname.startsWith('/portfolio/') ? '/portfolio' : '';
+
+const parseRoute = (pathname: string): { tab: CategoryKey; projectId: string | null } => {
+  const segments = pathname.split('/').filter(Boolean);
+  if (segments[0]?.toLowerCase() === 'portfolio') segments.shift();
+  const routeSegment = segments[0]?.toLowerCase();
+  const tab = CATEGORY_KEYS.find((key) =>
+    routeSegment === CATEGORY_PATHS[key] || routeSegment === key
+  ) || 'home';
+
+  let projectId: string | null = null;
+  if (tab !== 'home' && segments[1]) {
+    try {
+      projectId = decodeURIComponent(segments[1]);
+    } catch {
+      projectId = segments[1];
+    }
+  }
+
+  return { tab, projectId };
+};
+
+const findProjectFromRoute = (tab: CategoryKey, routeId: string | null, projects: Project[]) => {
+  if (!routeId) return null;
+  const categoryProjects = projects.filter((project) => project.category === tab);
+  const numberedRoute = routeId.match(/^(mv|dv|pj)-(\d+)$/);
+  const matchingCategory = numberedRoute
+    ? (Object.keys(PROJECT_ROUTE_PREFIXES) as Array<keyof typeof PROJECT_ROUTE_PREFIXES>)
+        .find((category) => PROJECT_ROUTE_PREFIXES[category] === numberedRoute[1])
+    : null;
+  if (numberedRoute && matchingCategory === tab) {
+    const numberFromBottom = Number(numberedRoute[2]);
+    return categoryProjects[categoryProjects.length - numberFromBottom] || null;
+  }
+
+  // Continue resolving previously shared project-ID URLs.
+  return projects.find((project) => project.id === routeId) || null;
+};
+
+const routePath = (tab: CategoryKey, project?: Project | null, projects: Project[] = []) => {
+  const deploymentBasePath = getDeploymentBasePath(window.location.pathname);
+  const basePath = tab === 'home'
+    ? `${deploymentBasePath}/`
+    : `${deploymentBasePath}/${CATEGORY_PATHS[tab]}`;
+  if (!project) return basePath;
+
+  const categoryProjects = projects.filter((item) => item.category === tab);
+  const displayIndex = categoryProjects.findIndex((item) => item.id === project.id);
+  const numberFromBottom = displayIndex >= 0 ? categoryProjects.length - displayIndex : 0;
+  const routeId = numberFromBottom > 0
+    ? `${PROJECT_ROUTE_PREFIXES[tab as keyof typeof PROJECT_ROUTE_PREFIXES]}-${String(numberFromBottom).padStart(3, '0')}`
+    : project.id;
+  return `${basePath}/${encodeURIComponent(routeId)}`;
+};
 
 export default function App() {
   // Load data from localStorage or initial defaults
@@ -71,10 +139,13 @@ export default function App() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
 
   // Current active navigation tab
-  const [activeTab, setActiveTab] = useState<CategoryKey>('home');
+  const [activeTab, setActiveTab] = useState<CategoryKey>(() => parseRoute(window.location.pathname).tab);
 
   // Currently opened project modal (for detailed view)
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(() => {
+    const route = parseRoute(window.location.pathname);
+    return findProjectFromRoute(route.tab, route.projectId, data.projects);
+  });
 
   // Admin content manager modal state
   const [isAdminOpen, setIsAdminOpen] = useState(false);
@@ -82,6 +153,45 @@ export default function App() {
 
   // Fullscreen image/video lightbox
   const [lightboxMedia, setLightboxMedia] = useState<MediaItem | null>(null);
+
+  // Keep the browser tab title in sync with the saved site configuration.
+  useEffect(() => {
+    document.title = data.config.pageTitle?.trim() || 'IH Portfolio - 互動影像作品集';
+  }, [data.config.pageTitle]);
+
+  // Restore category and project detail when a route is opened or browser history changes.
+  useEffect(() => {
+    const syncRoute = () => {
+      const route = parseRoute(window.location.pathname);
+      const project = findProjectFromRoute(route.tab, route.projectId, data.projects);
+      setActiveTab(project ? project.category : route.tab);
+      setSelectedProject(project);
+    };
+
+    window.addEventListener('popstate', syncRoute);
+    return () => window.removeEventListener('popstate', syncRoute);
+  }, [data.projects]);
+
+  const navigateToCategory = (tab: CategoryKey) => {
+    window.history.pushState(null, '', routePath(tab));
+    setActiveTab(tab);
+    setSelectedProject(null);
+  };
+
+  const navigateToProject = (project: Project, replace = false) => {
+    const method = replace ? 'replaceState' : 'pushState';
+    window.history[method](null, '', routePath(project.category, project, data.projects));
+    setActiveTab(project.category);
+    setSelectedProject(project);
+  };
+
+  const closeProject = () => {
+    if (selectedProject) {
+      window.history.replaceState(null, '', routePath(selectedProject.category));
+      setActiveTab(selectedProject.category);
+    }
+    setSelectedProject(null);
+  };
 
   // Trigger admin access request (from UI button, shortcut, or URL)
   const handleRequestAdminOpen = () => {
@@ -185,12 +295,12 @@ export default function App() {
 
   // Handle open project modal
   const handleOpenProject = (project: Project) => {
-    setSelectedProject(project);
+    navigateToProject(project);
   };
 
   // Handle edit project directly from modal
   const handleEditSpecificProject = (project: Project) => {
-    setSelectedProject(null);
+    closeProject();
     setEditingTargetProject(project);
     setIsAdminOpen(true);
   };
@@ -228,7 +338,7 @@ export default function App() {
         config={data.config}
         activeTab={activeTab}
         isAdminAuthenticated={isAdminAuthenticated}
-        onSelectTab={setActiveTab}
+        onSelectTab={navigateToCategory}
         onOpenAdmin={handleRequestAdminOpen}
         onLogout={handleLogoutAdmin}
       />
@@ -239,7 +349,7 @@ export default function App() {
           <HomeView
             config={data.config}
             projects={data.projects}
-            onSelectCategory={(cat) => setActiveTab(cat)}
+            onSelectCategory={navigateToCategory}
             onOpenProject={handleOpenProject}
           />
         ) : (
@@ -261,8 +371,8 @@ export default function App() {
           config={data.config}
           allCategoryProjects={categoryProjects}
           isAdminAuthenticated={isAdminAuthenticated}
-          onClose={() => setSelectedProject(null)}
-          onNavigate={(next) => setSelectedProject(next)}
+          onClose={closeProject}
+          onNavigate={(next) => navigateToProject(next)}
           onEditProject={handleEditSpecificProject}
           onOpenLightbox={(media) => setLightboxMedia(media)}
         />

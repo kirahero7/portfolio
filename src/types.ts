@@ -50,6 +50,7 @@ export interface HomeVideoItem {
 }
 
 export interface SiteConfig {
+  pageTitle?: string;           // 瀏覽器分頁標題
   logoTitle: string;
   logoSubtitle: string;
   phone: string;

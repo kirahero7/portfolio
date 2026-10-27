@@ -1,20 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# I-HSIANG CHENG — Portfolio
 
-# Run and deploy your AI Studio app
+互動媒體與動態影像作品集，展示動態影像、互動裝置與投影作品。
 
-This contains everything you need to run your app locally.
+## 本機開發
 
-View your app in AI Studio: https://ai.studio/apps/fda6cd36-5b02-4f90-a8b5-296ab388dca9
+需求：Node.js 及 npm。
 
-## Run Locally
+```sh
+npm install
+npm run dev
+```
 
-**Prerequisites:**  Node.js
+開發伺服器預設位於 `http://localhost:3000`。
 
+## 常用指令
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- `npm run lint`：執行 TypeScript 型別檢查
+- `npm run build`：建立正式版網站
+- `npm run preview`：預覽正式版網站
+
+## 內容管理
+
+作品與網站設定可透過網站內的「作品管理 / 擴充」介面維護。正式部署前請執行建置，並將 `dist` 目錄部署至網站主機。

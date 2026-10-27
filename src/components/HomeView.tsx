@@ -1,7 +1,7 @@
 import React from 'react';
 import { CategoryKey, HomeVideoItem, Project, SiteConfig } from '../types';
 import { getYouTubeEmbedUrl, getVimeoEmbedUrl, detectMediaType } from '../utils/mediaUtils';
-import { Play, Layers, Cpu, Radio, ArrowRight } from 'lucide-react';
+import { Play, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 
 interface HomeViewProps {
@@ -99,6 +99,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
   const homeMainTitle = config.categories?.home?.title || config.showreelTitle || '2026 SHOWREEL';
   const homeSubTitle = config.categories?.home?.enName || config.showreelSubtitle || 'Interactive Media & Motion Design Highlight';
   const personalBio = config.personalBio !== undefined ? config.personalBio : config.categories?.home?.description;
+  const personalBioLines = personalBio?.split('\n') || [];
   const personalPhoto = config.personalPhoto || 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop';
 
   return (
@@ -130,7 +131,19 @@ export const HomeView: React.FC<HomeViewProps> = ({
           )}
           {personalBio && (
             <div className="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl">
-              <p className="whitespace-pre-line">{personalBio}</p>
+              <p>
+                {personalBioLines.map((line, lineIndex) => (
+                  <React.Fragment key={`bio-line-${lineIndex}`}>
+                    {line.split(/(\*\*.*?\*\*)/g).map((part, partIndex) => {
+                      const isBold = part.startsWith('**') && part.endsWith('**') && part.length > 4;
+                      return isBold
+                        ? <strong key={`bio-part-${partIndex}`} className="font-bold text-white">{part.slice(2, -2)}</strong>
+                        : <React.Fragment key={`bio-part-${partIndex}`}>{part}</React.Fragment>;
+                    })}
+                    {lineIndex < personalBioLines.length - 1 && <br />}
+                  </React.Fragment>
+                ))}
+              </p>
             </div>
           )}
         </div>
@@ -178,11 +191,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <button
             onClick={() => onSelectCategory('motion')}
-            className="group p-5 bg-[#182330] hover:bg-[#1f2e40] border border-slate-700/60 hover:border-slate-400 text-left transition-all flex flex-col justify-between h-40"
+            className="group p-5 bg-[#182330] hover:bg-[#1f2e40] border border-slate-700/60 hover:border-slate-400 text-left transition-all flex flex-col justify-between h-32"
           >
             <div>
-              <div className="flex items-center justify-between text-slate-400 group-hover:text-white mb-2">
-                <Layers className="w-5 h-5" />
+              <div className="flex items-center justify-end text-slate-400 group-hover:text-white mb-2">
                 <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
               </div>
               <h4 className="text-lg font-bold text-white tracking-wider">
@@ -199,11 +211,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
           <button
             onClick={() => onSelectCategory('device')}
-            className="group p-5 bg-[#182330] hover:bg-[#1f2e40] border border-slate-700/60 hover:border-slate-400 text-left transition-all flex flex-col justify-between h-40"
+            className="group p-5 bg-[#182330] hover:bg-[#1f2e40] border border-slate-700/60 hover:border-slate-400 text-left transition-all flex flex-col justify-between h-32"
           >
             <div>
-              <div className="flex items-center justify-between text-slate-400 group-hover:text-white mb-2">
-                <Cpu className="w-5 h-5" />
+              <div className="flex items-center justify-end text-slate-400 group-hover:text-white mb-2">
                 <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
               </div>
               <h4 className="text-lg font-bold text-white tracking-wider">
@@ -220,11 +231,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
           <button
             onClick={() => onSelectCategory('wall')}
-            className="group p-5 bg-[#182330] hover:bg-[#1f2e40] border border-slate-700/60 hover:border-slate-400 text-left transition-all flex flex-col justify-between h-40"
+            className="group p-5 bg-[#182330] hover:bg-[#1f2e40] border border-slate-700/60 hover:border-slate-400 text-left transition-all flex flex-col justify-between h-32"
           >
             <div>
-              <div className="flex items-center justify-between text-slate-400 group-hover:text-white mb-2">
-                <Radio className="w-5 h-5" />
+              <div className="flex items-center justify-end text-slate-400 group-hover:text-white mb-2">
                 <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
               </div>
               <h4 className="text-lg font-bold text-white tracking-wider">
