@@ -42,7 +42,7 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -8 }}
       transition={{ duration: 0.2 }}
-      className="w-full max-w-[1400px] mx-auto px-4 sm:px-8 pb-16"
+      className="w-full max-w-[1320px] mx-auto px-5 sm:px-10 pb-16"
     >
       {/* Category sub-header: Chinese first, English below as requested */}
       <div className="flex items-center justify-between mb-6">

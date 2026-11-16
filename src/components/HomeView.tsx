@@ -108,7 +108,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.25 }}
-      className="w-full max-w-[1400px] mx-auto px-4 sm:px-8 pb-16"
+      className="w-full max-w-[1320px] mx-auto px-5 sm:px-10 pb-16"
     >
       {/* 個人照片、主標題、副標題及個人簡介 */}
       <div className="mb-10 grid grid-cols-1 lg:grid-cols-[minmax(14rem,16rem)_minmax(0,1fr)] gap-8 lg:gap-10 items-center">
