@@ -10,7 +10,7 @@
         "name": "關於我 HOME",
         "title": "程奕翔",
         "enName": "Interactive Media & Motion Design",
-        "description": "●專精於**動態影像設計**、**影片剪輯**、**影像後製合成**與**互動介面設計**。\n\n●擅長**科技**、**科幻**及**資訊視覺化內容**，能**將複雜的知識與概念轉化為清晰易懂的視覺**呈現。\n\n●具備**專案全流程執行能力**，涵蓋概念發想、腳本與分鏡設計、動態製作及後期合成。\n\n●具備**展覽場館**、**博物館動畫投影**、**PV 製作**、**宣傳影片攝製**及**節目視覺包裝**等專案經驗。"
+        "description": "● 專注於動態影像設計、影片剪輯、影像後製合成及互動遊戲裝置介面設計。\n\n● 擅長科技、科幻及資訊視覺化內容，能將複雜的知識與概念轉化為清晰易懂的視覺內容。\n\n● 具備完整的專案製作能力，涵蓋前期概念發想、腳本規劃、分鏡設計、動態影像製作及後期合成。\n\n● 具備展覽場館、博物館及劇場等多元專案經驗，涵蓋投影設計、PV 製作、宣傳影片攝製及節目視覺包裝。"
       },
       "motion": {
         "name": "動態影像/錄像",
@@ -30,10 +30,17 @@
     },
     "showreelTitle": "程奕翔",
     "showreelSubtitle": "Interactive Media & Motion Design",
-    "personalBio": "●專精於**動態影像設計**、**影片剪輯**、**影像後製合成**與**互動介面設計**。\n\n●擅長**科技**、**科幻**及**資訊視覺化內容**，能**將複雜的知識與概念轉化為清晰易懂的視覺**呈現。\n\n●具備**專案全流程執行能力**，涵蓋概念發想、腳本與分鏡設計、動態製作及後期合成。\n\n●具備**展覽場館**、**博物館動畫投影**、**PV 製作**、**宣傳影片攝製**及**節目視覺包裝**等專案經驗。",
-    "showreelUrl": "",
-    "showreelDescription": "專注於動態影像設計、互動裝置介面開發與大型沉浸式互動牆體驗。融合藝術美學與即時運算技術，創造觸動感官的數位體驗。",
-    "homeVideos": [],
+    "personalBio": "● 專注於動態影像設計、影片剪輯、影像後製合成及互動遊戲裝置介面設計。\n\n● 擅長科技、科幻及資訊視覺化內容，能將複雜的知識與概念轉化為清晰易懂的視覺內容。\n\n● 具備完整的專案製作能力，涵蓋前期概念發想、腳本規劃、分鏡設計、動態影像製作及後期合成。\n\n● 具備展覽場館、博物館及劇場等多元專案經驗，涵蓋投影設計、PV 製作、宣傳影片攝製及節目視覺包裝。",
+    "showreelUrl": "https://youtu.be/MFkXWKgFWPM?si=7mMm7PH0TFPygdH5",
+    "showreelDescription": "Motion Design / Interactive Media / SHOWREEL / I HSIANG CHENG",
+    "homeVideos": [
+      {
+        "id": "home-video-1794838019812",
+        "title": "SHOWREEL",
+        "url": "https://youtu.be/MFkXWKgFWPM?si=7mMm7PH0TFPygdH5",
+        "description": "Motion Design / Interactive Media / SHOWREEL / I HSIANG CHENG"
+      }
+    ],
     "footerTitle": "I-HSIANG CHENG Portfolio",
     "footerBio": "I-HSIANG CHENG  © 2026",
     "adminPassword": "12347788",

@@ -1,8 +1,9 @@
 import React from 'react';
 import { CategoryKey, HomeVideoItem, Project, SiteConfig } from '../types';
-import { getYouTubeEmbedUrl, getVimeoEmbedUrl, detectMediaType } from '../utils/mediaUtils';
+import { getVimeoEmbedUrl, detectMediaType } from '../utils/mediaUtils';
 import { Play, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
+import { YouTubeEmbed } from './YouTubeEmbed';
 
 interface HomeViewProps {
   config: SiteConfig;
@@ -38,16 +39,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
     const mediaType = detectMediaType(url);
 
     if (mediaType === 'youtube') {
-      const embedUrl = getYouTubeEmbedUrl(url, true);
-      return (
-        <iframe
-          src={embedUrl}
-          title={title || 'Showreel YouTube'}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          className="w-full h-full border-0 absolute inset-0"
-        />
-      );
+      return <YouTubeEmbed url={url} title={title || 'Showreel YouTube'} autoplay />;
     }
 
     if (mediaType === 'vimeo') {

@@ -47,25 +47,25 @@ export function detectMediaType(url: string): MediaType {
  */
 export function getYouTubeId(url: string): string {
   if (!url) return '';
-  const trimmed = url.trim();
-  if (trimmed.includes('youtu.be/')) {
-    return trimmed.split('youtu.be/')[1]?.split(/[?#]/)[0] || '';
-  }
-  if (trimmed.includes('youtube.com/watch')) {
-    try {
-      const parsed = new URL(trimmed);
-      return parsed.searchParams.get('v') || '';
-    } catch {
-      const match = trimmed.match(/[?&]v=([^&#]+)/);
-      return match ? match[1] : '';
+  try {
+    const parsed = new URL(url.trim());
+    const host = parsed.hostname.toLowerCase().replace(/^www\./, '');
+
+    if (host === 'youtu.be') {
+      return parsed.pathname.split('/').filter(Boolean)[0] || '';
     }
+
+    if (host === 'youtube.com' || host === 'm.youtube.com' || host === 'youtube-nocookie.com') {
+      const queryId = parsed.searchParams.get('v');
+      if (queryId) return queryId;
+
+      const pathMatch = parsed.pathname.match(/^\/(?:embed|shorts|live|v)\/([^/?#]+)/);
+      return pathMatch?.[1] || '';
+    }
+  } catch {
+    return '';
   }
-  if (trimmed.includes('youtube.com/shorts/')) {
-    return trimmed.split('youtube.com/shorts/')[1]?.split(/[?#]/)[0] || '';
-  }
-  if (trimmed.includes('youtube.com/embed/')) {
-    return trimmed.split('youtube.com/embed/')[1]?.split(/[?#]/)[0] || '';
-  }
+
   return '';
 }
 
@@ -89,24 +89,7 @@ export function getMediaThumbnailUrl(item?: { type?: string; url?: string; thumb
 export function getYouTubeEmbedUrl(url: string, autoplay = false): string {
   if (!url) return '';
   const trimmed = url.trim();
-
-  let videoId = '';
-
-  if (trimmed.includes('youtu.be/')) {
-    videoId = trimmed.split('youtu.be/')[1]?.split(/[?#]/)[0] || '';
-  } else if (trimmed.includes('youtube.com/watch')) {
-    try {
-      const parsed = new URL(trimmed);
-      videoId = parsed.searchParams.get('v') || '';
-    } catch {
-      const match = trimmed.match(/[?&]v=([^&#]+)/);
-      videoId = match ? match[1] : '';
-    }
-  } else if (trimmed.includes('youtube.com/shorts/')) {
-    videoId = trimmed.split('youtube.com/shorts/')[1]?.split(/[?#]/)[0] || '';
-  } else if (trimmed.includes('youtube.com/embed/')) {
-    videoId = trimmed.split('youtube.com/embed/')[1]?.split(/[?#]/)[0] || '';
-  }
+  const videoId = getYouTubeId(trimmed);
 
   if (!videoId) {
     return trimmed; // fallback
@@ -115,7 +98,7 @@ export function getYouTubeEmbedUrl(url: string, autoplay = false): string {
   const params = new URLSearchParams({
     rel: '0',
     modestbranding: '1',
-    enablejsapi: '1',
+    playsinline: '1',
   });
   if (autoplay) {
     params.set('autoplay', '1');

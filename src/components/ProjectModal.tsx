@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { MediaItem, Project, SiteConfig } from '../types';
-import { getYouTubeEmbedUrl, getVimeoEmbedUrl } from '../utils/mediaUtils';
+import { getVimeoEmbedUrl } from '../utils/mediaUtils';
+import { YouTubeEmbed } from './YouTubeEmbed';
 import {
   X,
   ChevronLeft,
@@ -94,16 +95,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 
   const renderMediaItem = (item: MediaItem, index: number) => {
     if (item.type === 'youtube') {
-      const embedUrl = getYouTubeEmbedUrl(item.url);
       return (
         <div key={item.id || index} className="w-full mb-8">
           <div className="relative aspect-video w-full bg-black border border-slate-700/80 overflow-hidden shadow-lg">
-            <iframe
-              src={embedUrl}
+            <YouTubeEmbed
+              url={item.url}
               title={item.caption || `YouTube Video ${index + 1}`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full border-0 absolute inset-0"
             />
           </div>
           {item.caption && (
