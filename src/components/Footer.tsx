@@ -14,45 +14,47 @@ export const Footer: React.FC<FooterProps> = ({ config, isAdminAuthenticated, on
   const vimeoUrl = config.vimeoUrl?.trim() || config.socialLinks?.find(s => s.platform.toLowerCase().includes('vimeo'))?.url?.trim() || '';
 
   return (
-    <footer className="w-full max-w-[1320px] mx-auto border-t border-slate-800/80 bg-[#0f1620] py-10 px-5 sm:px-10 mt-auto">
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center sm:text-left">
-          <span className="font-semibold text-slate-300 tracking-wider">
-            {footerTitle}
-          </span>
-          <span className="text-slate-600 hidden sm:inline">|</span>
-          <span className="text-slate-400">{footerBio}</span>
-        </div>
+    <footer className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-20 mt-auto bg-[#0f1620]">
+      <div className="border-t border-slate-800/80 py-10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center sm:text-left">
+            <span className="font-semibold text-slate-300 tracking-wider">
+              {footerTitle}
+            </span>
+            <span className="text-slate-600 hidden sm:inline">|</span>
+            <span className="text-slate-400">{footerBio}</span>
+          </div>
 
-        <div className="flex items-center gap-5">
-          {vimeoUrl && (
-            <a
-              href={vimeoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-slate-300 hover:text-white transition-colors flex items-center gap-1.5 font-medium tracking-wide uppercase group"
-            >
-              <Video className="w-3.5 h-3.5 text-slate-400 group-hover:text-white transition-colors" />
-              <span>VIMEO</span>
-            </a>
-          )}
-
-          {/* Admin discreet trigger (lock icon) */}
-          <button
-            onClick={onOpenAdmin}
-            title={isAdminAuthenticated ? "已登入管理模式 (點擊進入後台)" : "管理者通行驗證"}
-            className={`p-1 transition-all rounded ${
-              isAdminAuthenticated
-                ? 'text-indigo-400 hover:text-indigo-300 bg-indigo-950/40 border border-indigo-800/50'
-                : 'text-slate-600 hover:text-slate-400 opacity-20 hover:opacity-100'
-            }`}
-          >
-            {isAdminAuthenticated ? (
-              <Unlock className="w-3.5 h-3.5" />
-            ) : (
-              <Lock className="w-3 h-3" />
+          <div className="flex items-center gap-5">
+            {vimeoUrl && (
+              <a
+                href={vimeoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-300 hover:text-white transition-colors flex items-center gap-1.5 font-medium tracking-wide uppercase group"
+              >
+                <Video className="w-3.5 h-3.5 text-slate-400 group-hover:text-white transition-colors" />
+                <span>VIMEO</span>
+              </a>
             )}
-          </button>
+
+            {/* Admin discreet trigger (lock icon) */}
+            <button
+              onClick={onOpenAdmin}
+              title={isAdminAuthenticated ? "已登入管理模式 (點擊進入後台)" : "管理者通行驗證"}
+              className={`p-1 transition-all rounded ${
+                isAdminAuthenticated
+                  ? 'text-indigo-400 hover:text-indigo-300 bg-indigo-950/40 border border-indigo-800/50'
+                  : 'text-slate-600 hover:text-slate-400 opacity-20 hover:opacity-100'
+              }`}
+            >
+              {isAdminAuthenticated ? (
+                <Unlock className="w-3.5 h-3.5" />
+              ) : (
+                <Lock className="w-3 h-3" />
+              )}
+            </button>
+          </div>
         </div>
       </div>
     </footer>
