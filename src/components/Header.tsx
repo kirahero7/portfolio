@@ -27,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({
   ];
 
   return (
-    <header className="w-full pt-8 pb-6 px-4 sm:px-8 max-w-6xl mx-auto">
+    <header className="w-full pt-8 pb-6 px-4 sm:px-8 max-w-[1400px] mx-auto">
       {/* Top Bar: Brand Logo & Contact */}
       <div className="flex flex-row justify-between items-start mb-6">
         {/* Brand */}

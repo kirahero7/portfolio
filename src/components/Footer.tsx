@@ -15,7 +15,7 @@ export const Footer: React.FC<FooterProps> = ({ config, isAdminAuthenticated, on
 
   return (
     <footer className="w-full border-t border-slate-800/80 bg-[#0f1620] py-10 px-4 sm:px-8 mt-auto">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div className="max-w-[1400px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center sm:text-left">
           <span className="font-semibold text-slate-300 tracking-wider">
             {footerTitle}

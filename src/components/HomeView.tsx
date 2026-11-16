@@ -1,9 +1,8 @@
 import React from 'react';
 import { CategoryKey, HomeVideoItem, Project, SiteConfig } from '../types';
-import { getVimeoEmbedUrl, detectMediaType } from '../utils/mediaUtils';
+import { getYouTubeEmbedUrl, getVimeoEmbedUrl, detectMediaType } from '../utils/mediaUtils';
 import { Play, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
-import { YouTubeEmbed } from './YouTubeEmbed';
 
 interface HomeViewProps {
   config: SiteConfig;
@@ -34,16 +33,25 @@ export const HomeView: React.FC<HomeViewProps> = ({
   // Filter out any entries that don't have a valid URL (有連結就有影片，沒有連結時完全不留空方塊)
   const homeVideos = rawVideos.filter((video) => video.url && video.url.trim().length > 0);
 
-  const renderSingleVideoEmbed = (url: string, title?: string) => {
+  const renderSingleVideoEmbed = (url: string, title: string | undefined, autoplay: boolean) => {
     if (!url || !url.trim()) return null;
     const mediaType = detectMediaType(url);
 
     if (mediaType === 'youtube') {
-      return <YouTubeEmbed url={url} title={title || 'Showreel YouTube'} autoplay />;
+      return (
+        <iframe
+          src={getYouTubeEmbedUrl(url, autoplay)}
+          title={title || 'Showreel YouTube'}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+          className="w-full h-full border-0 absolute inset-0"
+        />
+      );
     }
 
     if (mediaType === 'vimeo') {
-      const embedUrl = getVimeoEmbedUrl(url, true);
+      const embedUrl = getVimeoEmbedUrl(url, autoplay);
       return (
         <iframe
           src={embedUrl}
@@ -60,7 +68,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
         <video
           src={url}
           controls
-          autoPlay
+          autoPlay={autoplay}
           muted
           loop
           className="w-full h-full object-cover absolute inset-0"
@@ -100,11 +108,11 @@ export const HomeView: React.FC<HomeViewProps> = ({
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.25 }}
-      className="w-full max-w-6xl mx-auto px-4 sm:px-8 pb-16"
+      className="w-full max-w-[1400px] mx-auto px-4 sm:px-8 pb-16"
     >
       {/* 個人照片、主標題、副標題及個人簡介 */}
-      <div className="mb-10 grid grid-cols-1 lg:grid-cols-[minmax(0,0.7fr)_minmax(0,1.3fr)] gap-8 lg:gap-10 items-center">
-        <div className="relative aspect-square w-full max-w-[14rem] lg:max-w-[16rem] mx-auto overflow-hidden rounded-2xl border border-slate-700/60 bg-[#1b2633] shadow-xl">
+      <div className="mb-10 grid grid-cols-1 lg:grid-cols-[minmax(14rem,16rem)_minmax(0,1fr)] gap-8 lg:gap-10 items-center">
+        <div className="relative aspect-square w-full max-w-[14rem] lg:max-w-[16rem] mx-auto lg:mx-0 overflow-hidden rounded-2xl border border-slate-700/60 bg-[#1b2633] shadow-xl">
           <img
             src={personalPhoto}
             alt={`${homeMainTitle} 個人照片`}
@@ -122,7 +130,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </p>
           )}
           {personalBio && (
-            <div className="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl">
+            <div className="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed min-[1200px]:whitespace-nowrap">
               <p>
                 {personalBioLines.map((line, lineIndex) => (
                   <React.Fragment key={`bio-line-${lineIndex}`}>
@@ -157,7 +165,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
               {/* 16:9 內嵌影片視窗 */}
               <div className="w-full relative aspect-video bg-[#1a2533] overflow-hidden border border-slate-700/60 shadow-2xl">
-                {renderSingleVideoEmbed(video.url, video.title)}
+                {renderSingleVideoEmbed(video.url, video.title, index === 0)}
               </div>
 
               {/* 影片簡介文字 */}
