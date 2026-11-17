@@ -100,7 +100,7 @@ export const initialPortfolioData: PortfolioData = {
       "id": "proj-1791361591856",
       "category": "motion",
       "code": "臺中國家歌劇院",
-      "title": "十周年紀念動態影片",
+      "title": "十週年紀念動態影片",
       "subtitle": "",
       "year": "2025",
       "client": "",
