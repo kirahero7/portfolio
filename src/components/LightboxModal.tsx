@@ -46,6 +46,8 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({ media, onClose }) 
               src={media.url}
               controls
               autoPlay
+              playsInline
+              preload="metadata"
               className="max-w-full max-h-[80vh] object-contain border border-slate-700 shadow-2xl"
             />
           ) : (

@@ -146,6 +146,8 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
               src={item.url}
               controls
               loop
+              playsInline
+              preload="metadata"
               className="w-full h-full object-contain"
             />
           </div>

@@ -1096,7 +1096,7 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                               <span>詳細展示媒體與影音清單 ({editingProject.mediaList?.length || 0})</span>
                             </h4>
                             <p className="text-[11px] text-slate-400 mt-0.5">
-                              支援多筆 pCloud 圖片或 YouTube 內嵌影音
+                              支援 pCloud 圖片／影片直連、YouTube 與一般 MP4 直連
                             </p>
                           </div>
 
@@ -1143,7 +1143,7 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                               rows={4}
                               value={batchUrlsText}
                               onChange={(e) => setBatchUrlsText(e.target.value)}
-                              placeholder={`https://u.pcloud.link/publink/show?code=...\nhttps://www.youtube.com/watch?v=...\nhttps://filedn.com/...`}
+                              placeholder={`https://filedn.eu/.../video.mp4（pCloud 影片直連）\nhttps://www.youtube.com/watch?v=...\nhttps://filedn.eu/.../image.jpg`}
                               className="w-full bg-[#182330] border border-slate-700 p-2 text-xs text-white focus:border-indigo-400 focus:outline-none font-mono leading-relaxed placeholder:text-slate-500"
                             />
                             <div className="flex items-center justify-between">
@@ -1290,7 +1290,7 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                                         type="text"
                                         value={m.url}
                                         onChange={(e) => handleUpdateMediaItem(idx, 'url', e.target.value)}
-                                        placeholder="貼上 pCloud 圖片直接連結或 YouTube 影片網址..."
+                                        placeholder="貼上 pCloud 圖片／影片直連（MP4）或 YouTube 網址..."
                                         className="w-full bg-[#182330] border border-slate-700 p-1.5 text-xs text-white focus:border-white focus:outline-none font-mono placeholder:text-slate-500"
                                       />
                                       <input
@@ -1345,7 +1345,8 @@ export const AdminEditorModal: React.FC<AdminEditorModalProps> = ({
                             <Sparkles className="w-3 h-3 text-sky-400" />
                             <span>pCloud 與 YouTube 連結使用指南：</span>
                           </div>
-                          <p>• <strong>pCloud 圖床</strong>：在 pCloud 檔案按右鍵選擇「取得直接連結 (Direct Link)」或分享連結，貼入後前台即可高速讀取展示。</p>
+                          <p>• <strong>pCloud 影片</strong>：請使用「取得直接連結 (Direct Link)」的 MP4 檔案網址；publink/show 分享預覽頁不是影片檔，不能直接內嵌播放。</p>
+                          <p>• <strong>跨瀏覽器相容</strong>：建議 MP4 使用 H.264 影像與 AAC 音訊編碼，避免部分瀏覽器無法解碼或只有黑畫面。</p>
                           <p>• <strong>YouTube 影片</strong>：支援標準網址 (youtube.com/watch?v=...) 或短網址 (youtu.be/...)，作品彈窗將自動內嵌高品質播放。</p>
                         </div>
                       </div>

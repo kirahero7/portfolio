@@ -5,6 +5,7 @@ import { MediaType } from '../types';
  */
 export function detectMediaType(url: string): MediaType {
   const cleanUrl = (url || '').trim().toLowerCase();
+  const mediaPath = cleanUrl.split(/[?#]/, 1)[0];
 
   if (!cleanUrl) return 'image';
 
@@ -23,16 +24,13 @@ export function detectMediaType(url: string): MediaType {
   }
 
   // GIF detection
-  if (cleanUrl.endsWith('.gif') || cleanUrl.includes('.gif?')) {
+  if (mediaPath.endsWith('.gif')) {
     return 'gif';
   }
 
   // Direct video file
   if (
-    cleanUrl.endsWith('.mp4') ||
-    cleanUrl.endsWith('.webm') ||
-    cleanUrl.endsWith('.ogg') ||
-    cleanUrl.endsWith('.mov') ||
+    /\.(?:mp4|webm|ogg|mov)$/.test(mediaPath) ||
     cleanUrl.startsWith('data:video/')
   ) {
     return 'video';

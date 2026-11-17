@@ -45,7 +45,7 @@ export const initialPortfolioData: PortfolioData = {
       {
         "id": "home-video-1794839987837",
         "title": "SHOWREEL 備用連結",
-        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.%E5%85%B6%E4%BB%96/Motion%20Design%20%20Interactive%20Media%20%20SHOWREEL%20%20I-HSIANG%20CHENG.mp4",
+        "url": "https://filedn.eu/lh5myjhqdd3fdboA7feTrsX/%E4%BD%9C%E5%93%81%E5%9C%96%E5%BA%8A/00.%E5%85%B6%E4%BB%96/Motion%20Design%20%20Interactive%20Media%20%20SHOWREEL%20%20I-HSIANG%20CHENG%20(h.264_AAC).mp4",
         "description": ""
       }
     ],
