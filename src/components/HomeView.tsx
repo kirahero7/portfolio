@@ -68,9 +68,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
         <video
           src={url}
           controls
-          autoPlay={autoplay}
-          muted
-          loop
+          playsInline
+          preload="metadata"
           className="w-full h-full object-cover absolute inset-0"
         />
       );
@@ -165,7 +164,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
               {/* 16:9 內嵌影片視窗 */}
               <div className="w-full relative aspect-video bg-[#1a2533] overflow-hidden border border-slate-700/60 shadow-2xl">
-                {renderSingleVideoEmbed(video.url, video.title, index === 0)}
+                {renderSingleVideoEmbed(video.url, video.title, false)}
               </div>
 
               {/* 影片簡介文字 */}
