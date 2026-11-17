@@ -84,7 +84,7 @@ export const Header: React.FC<HeaderProps> = ({
       </div>
 
       {/* Solid Divider Line */}
-      <div className="w-full h-px bg-slate-700/80 my-6" />
+      <div className="w-full h-px bg-white my-6" />
 
       {/* Navigation Buttons Row - Faithful rectangle styling from mockup */}
       <nav className="flex flex-wrap items-center gap-3 sm:gap-4">
